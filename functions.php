@@ -119,8 +119,108 @@ new image size.
 function bones_register_sidebars() {
 	register_sidebar(array(
 		'id' => 'sidebar1',
-		'name' => __( 'Sidebar 1', 'bonestheme' ),
+		'name' => __( 'Main Sidebar', 'bonestheme' ),
 		'description' => __( 'The first (primary) sidebar.', 'bonestheme' ),
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget' => '</div>',
+		'before_title' => '<h4 class="widgettitle">',
+		'after_title' => '</h4>',
+	));
+        
+        register_sidebar(array(
+		'id' => 'home_sidebar',
+		'name' => __( 'Home Mainbar', 'bonestheme' ),
+		'description' => __( 'The home sidebar that displayed in main content area.', 'bonestheme' ),
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget' => '</div>',
+		'before_title' => '<h4 class="widgettitle">',
+		'after_title' => '</h4>',
+	));
+        
+        register_sidebar(array(
+		'id' => 'footer_sidebar_left',
+		'name' => __( 'Footer Left Sidebar |*|_|_|', 'bonestheme' ),
+		'description' => __( 'The footer left sidebar.', 'bonestheme' ),
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget' => '</div>',
+		'before_title' => '<h4 class="widgettitle">',
+		'after_title' => '</h4>',
+	));
+        
+        register_sidebar(array(
+		'id' => 'footer_sidebar_center',
+		'name' => __( 'Footer Center Sidebar |_|*|_|', 'bonestheme' ),
+		'description' => __( 'The footer center sidebar.', 'bonestheme' ),
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget' => '</div>',
+		'before_title' => '<h4 class="widgettitle">',
+		'after_title' => '</h4>',
+	));
+        
+        register_sidebar(array(
+		'id' => 'footer_sidebar_right',
+		'name' => __( 'Footer Right Sidebar |_|_|*|', 'bonestheme' ),
+		'description' => __( 'The footer right sidebar.', 'bonestheme' ),
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget' => '</div>',
+		'before_title' => '<h4 class="widgettitle">',
+		'after_title' => '</h4>',
+	));
+        
+        register_sidebar(array(
+		'id' => 'header_sidebar_center',
+		'name' => __( 'Header Center Sidebar', 'bonestheme' ),
+		'description' => __( 'The header center sidebar.', 'bonestheme' ),
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget' => '</div>',
+		'before_title' => '<h4 class="widgettitle">',
+		'after_title' => '</h4>',
+	));
+        
+        register_sidebar(array(
+		'id' => 'header_sidebar_right',
+		'name' => __( 'Header Right Sidebar', 'bonestheme' ),
+		'description' => __( 'The header right sidebar.', 'bonestheme' ),
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget' => '</div>',
+		'before_title' => '<h4 class="widgettitle">',
+		'after_title' => '</h4>',
+	));
+        
+        register_sidebar(array(
+		'id' => 'home_banners',
+		'name' => __( 'Home Banners Area', 'bonestheme' ),
+		'description' => __( 'Main banner area.', 'bonestheme' ),
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget' => '</div>',
+		'before_title' => '<h4 class="widgettitle">',
+		'after_title' => '</h4>',
+	));
+        
+        register_sidebar(array(
+		'id' => 'home_slider',
+		'name' => __( 'Home Slider Area', 'bonestheme' ),
+		'description' => __( 'Home Slider Area.', 'bonestheme' ),
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget' => '</div>',
+		'before_title' => '<h4 class="widgettitle">',
+		'after_title' => '</h4>',
+	));
+        
+        register_sidebar(array(
+		'id' => 'adv1_sidebar',
+		'name' => __( 'Adv 1 Sidebar', 'bonestheme' ),
+		'description' => __( 'Sidebar advertisement position 1.', 'bonestheme' ),
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget' => '</div>',
+		'before_title' => '<h4 class="widgettitle">',
+		'after_title' => '</h4>',
+	));
+        
+        register_sidebar(array(
+		'id' => 'adv2_sidebar',
+		'name' => __( 'Adv 2 Sidebar', 'bonestheme' ),
+		'description' => __( 'Sidebar advertisement position 2.', 'bonestheme' ),
 		'before_widget' => '<div id="%1$s" class="widget %2$s">',
 		'after_widget' => '</div>',
 		'before_title' => '<h4 class="widgettitle">',
