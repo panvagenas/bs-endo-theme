@@ -76,6 +76,20 @@ them however you see fit.
     @include grid-col;
     width: 75%;
   }
+  
+  .m-2of5 {
+    @include grid-col;
+    width: 40%;
+  }
+  
+  .m-3of5 {
+    @include grid-col;
+    width: 60%;
+  }
+  
+  .m-hidden {
+      display: none;
+  }
 
 } // end mobile styles
 
@@ -249,5 +263,24 @@ them however you see fit.
     @include grid-col;
     width: 8.33%;
   }
+  
+  .d-5of12 {
+      @include grid-col;
+      width: 41.6666667%;
+  }
+  
+  .d-2of12 {
+      @include grid-col;
+      width: 16.6666667%;
+  }
 
+  .d-3of12 {
+      @include grid-col;
+      width: 25%;
+  }
+  
+  .d-4of12 {
+      @include grid-col;
+      width: 33.3333333%;
+  }
 } // end desktop styles

@@ -678,7 +678,20 @@ them however you see fit.
   .m-3of4 {
     float: left;
     padding-right: 0.75em;
-    width: 75%; } }
+    width: 75%; }
+
+  .m-2of5 {
+    float: left;
+    padding-right: 0.75em;
+    width: 40%; }
+
+  .m-3of5 {
+    float: left;
+    padding-right: 0.75em;
+    width: 60%; }
+
+  .m-hidden {
+    display: none; } }
 /* Portrait tablet to landscape */
 @media (min-width: 768px) and (max-width: 1029px) {
   .t-all {
@@ -842,7 +855,27 @@ them however you see fit.
   .d-1of12 {
     float: left;
     padding-right: 0.75em;
-    width: 8.33%; } }
+    width: 8.33%; }
+
+  .d-5of12 {
+    float: left;
+    padding-right: 0.75em;
+    width: 41.6666667%; }
+
+  .d-2of12 {
+    float: left;
+    padding-right: 0.75em;
+    width: 16.6666667%; }
+
+  .d-3of12 {
+    float: left;
+    padding-right: 0.75em;
+    width: 25%; }
+
+  .d-4of12 {
+    float: left;
+    padding-right: 0.75em;
+    width: 33.3333333%; } }
 /*********************
 IMPORTING MODULES
 Modules are reusable blocks or elements we use throughout the project.
@@ -1244,6 +1277,30 @@ and will be used across all viewports.
 
 ******************************************************************/
 /*********************
+IMAGES
+*********************/
+.logo, .search, .arrrigth, .arrdown {
+  max-width: 100%;
+  background-size: 100%;
+  background-image: url("png.png"); }
+
+.logo {
+  background-position: 0 0%;
+  background-size: 100%; }
+
+.search {
+  background-position: 0 79.005525%;
+  background-size: 130.277778%; }
+
+.arrrigth {
+  background-position: 0 95.196507%;
+  background-size: 1340%; }
+
+.arrdown {
+  background-position: 0 100%;
+  background-size: 4690%; }
+
+/*********************
 GENERAL STYLES
 *********************/
 body {
@@ -1358,12 +1415,35 @@ h5, .h5 {
 HEADER STYLES
 *********************/
 .header {
-  background-color: #323944; }
+  /*background-color: $bs-gray;*/ }
 
-#logo {
+#logo, #gif, #advertise {
   margin: 0.75em 0; }
-  #logo a {
+  #logo a, #gif a, #advertise a {
     color: #fff; }
+
+#gif .sidebar-header, #advertise .sidebar-header {
+  border-radius: 5px; }
+
+#gif .sidebar-header {
+  background-color: #4c5255; }
+
+#advertise .sidebar-header {
+  background-color: #537f6f; }
+
+#inner-header {
+  background-color: #ebebeb; }
+
+#inner-header-head {
+  padding-left: 0.75em;
+  padding-right: 0.75em;
+  background-color: #779e89; }
+
+nav {
+  background-color: #4c5255;
+  margin-top: 15px;
+  margin-left: -1.5em;
+  margin-right: -1.5em; }
 
 /*********************
 NAVIGATION STYLES
@@ -1409,7 +1489,11 @@ and more scalable.
 POSTS & CONTENT STYLES
 *********************/
 #content {
-  margin-top: 1.5em; }
+  /*margin-top: 1.5em;*/
+  /*padding-top: 1.5em;*/ }
+  #content #inner-content {
+    padding-top: 1.5em;
+    background-color: #ebebeb; }
 
 .hentry {
   background-color: #fff;
@@ -1854,7 +1938,9 @@ you can add resource intensive styles.
   LAYOUT & GRID STYLES
   *********************/
   .wrap {
-    width: 760px; }
+    width: 760px;
+    padding-left: 0em;
+    padding-right: 0em; }
 
   /*********************
   HEADER STYLES
@@ -1986,7 +2072,9 @@ you can add resource intensive styles.
   
   ******************************************************************/
   .wrap {
-    width: 1040px; } }
+    width: 1040px;
+    padding-left: 0em;
+    padding-right: 0em; } }
 /*********************
 LARGE VIEWING SIZE
 This is for the larger monitors and possibly full screen viewers.
@@ -2001,7 +2089,11 @@ This is for the larger monitors and possibly full screen viewers.
   You can add some advanced styles here if you like. This kicks in
   on larger screens.
   
-  ******************************************************************/ }
+  ******************************************************************/
+  .wrap {
+    width: 1220px;
+    padding-left: 0em;
+    padding-right: 0em; } }
 /*********************
 RETINA (2x RESOLUTION DEVICES)
 This applies to the retina iPhone (4s) and iPad (2,3) along with

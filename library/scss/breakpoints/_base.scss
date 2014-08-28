@@ -12,6 +12,17 @@ and will be used across all viewports.
 ******************************************************************/
 
 /*********************
+IMAGES
+*********************/
+.logo, .search, .arrrigth, .arrdown
+{ max-width: 100%; background-size: 100%; background-image: url('png.png'); }
+ 
+.logo { background-position: 0 0%; background-size: 100%; }
+.search { background-position: 0 79.005525%; background-size: 130.277778%; }
+.arrrigth { background-position: 0 95.196507%; background-size: 1340%; }
+.arrdown { background-position: 0 100%; background-size: 4690%; }
+
+/*********************
 GENERAL STYLES
 *********************/
 
@@ -152,16 +163,45 @@ HEADER STYLES
 *********************/
 
 .header {
-	background-color: $black;
+	/*background-color: $bs-gray;*/
 }
 
-	#logo {
+	#logo, #gif, #advertise {
 		margin: 0.75em 0;
-
+                
 		a {
 			color: $white;
 		}
 	}
+        
+        #gif .sidebar-header, #advertise .sidebar-header {
+            border-radius: 5px;
+        }
+        
+        #gif .sidebar-header {
+            background-color: $bs-logo-dark-green;
+        }
+        
+        #advertise .sidebar-header {
+            background-color: $bs-logo-green;
+        }
+        
+        #inner-header {
+            background-color: $bs-gray;
+        }
+        
+        #inner-header-head {
+            padding-left: 0.75em;
+            padding-right: 0.75em;
+            background-color: $bs-green;
+        }
+        
+        nav {
+            background-color: $bs-logo-dark-green;
+            margin-top: 15px;
+            margin-left: -1.5em;
+            margin-right: -1.5em;
+        }
 
 /*********************
 NAVIGATION STYLES
@@ -251,7 +291,13 @@ POSTS & CONTENT STYLES
 *********************/
 
 #content {
-	margin-top: 1.5em;
+	/*margin-top: 1.5em;*/
+        /*padding-top: 1.5em;*/
+        
+        #inner-content {
+            padding-top: 1.5em;
+            background-color: $bs-gray;
+        }
 }
 
 		.hentry {

@@ -43,13 +43,22 @@
 
         <div id="container">
 
-            <header class="header" role="banner">
+            <header class="header wrap" role="banner">
 
                 <div id="inner-header" class="wrap cf">
 
                     <?php // to use a image just replace the bloginfo('name') with your img src and remove the surrounding <p> ?>
-                    <p id="logo" class="h1"><a href="<?php echo home_url(); ?>" rel="nofollow"><?php bloginfo('name'); ?></a></p>
-
+                    <div id="inner-header-head" class="wrap cf">
+                        <div id="logo" class="d-4of12 t-4of12 m-2of5">
+                            <a href="<?php echo home_url(); ?>" rel="nofollow"><img class="logo" alt="bikerspirit.net" src="<?php echo get_template_directory_uri(); ?>/library/images/logo.png"></a>
+                        </div>
+                        <div id="gif" class="d-3of12 t-3of12 m-hidden">
+                            <?php get_sidebar('header_sidebar_center'); ?>
+                        </div>
+                        <div id="advertise" class="d-5of12 t-5of12 m-2of5 last-col">
+                            <?php get_sidebar('header_sidebar_right'); ?>
+                        </div>
+                    </div>
                     <?php // if you'd like to use the site description you can un-comment it below ?>
                     <?php // bloginfo('description'); ?>
 

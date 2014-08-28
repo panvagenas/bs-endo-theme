@@ -1,10 +1,14 @@
 <?php get_header(); ?>
 
 <div id="content">
-
     <div id="inner-content" class="wrap cf">
 
         <div id="main" class="m-all t-2of3 d-5of7 cf" role="main">
+            <?php
+            if (is_front_page()) {
+                include 'home-head.php';
+            }
+            ?>
 
             <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
@@ -18,7 +22,7 @@
                                 <?php printf(__('Posted <time class="updated" datetime="%1$s" pubdate>%2$s</time> by <span class="author">%3$s</span>', 'bonestheme'), get_the_time('Y-m-j'), get_the_time(get_option('date_format')), get_the_author_link(get_the_author_meta('ID'))); ?>
                             </p>
 
-                        </header> <?php // end article header  ?>
+                        </header> <?php // end article header   ?>
 
                         <section class="entry-content cf" itemprop="articleBody">
                             <?php
@@ -44,7 +48,7 @@
                                 'link_after' => '</span>',
                             ));
                             ?>
-                        </section> <?php // end article section  ?>
+                        </section> <?php // end article section   ?>
 
                         <footer class="article-footer cf">
 
@@ -55,7 +59,8 @@
                     </article>
 
                 <?php endwhile;
-            else : ?>
+            else :
+                ?>
 
                 <article id="post-not-found" class="hentry cf">
                     <header class="article-header">
