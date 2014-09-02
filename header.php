@@ -55,7 +55,7 @@
                         <div id="gif" class="d-3of12 t-3of12 m-hidden">
                             <?php get_sidebar('header_sidebar_center'); ?>
                         </div>
-                        <div id="advertise" class="d-5of12 t-5of12 m-2of5 last-col">
+                        <div id="advertise" class="d-5of12 t-5of12 m-3of5 last-col">
                             <?php get_sidebar('header_sidebar_right'); ?>
                         </div>
                     </div>

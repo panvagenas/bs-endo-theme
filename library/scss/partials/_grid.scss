@@ -147,6 +147,31 @@ them however you see fit.
     @include grid-col;
     width: 80%;
   }
+  
+  .t-5of12 {
+      @include grid-col;
+      width: 41.6666667%;
+  }
+  
+  .t-2of12 {
+      @include grid-col;
+      width: 16.6666667%;
+  }
+
+  .t-3of12 {
+      @include grid-col;
+      width: 25%;
+  }
+  
+  .t-4of12 {
+      @include grid-col;
+      width: 33.3333333%;
+  }
+  
+  .t-8of12 {
+      @include grid-col;
+      width: 66.6666667%;
+  }
 
 } // end tablet
 
@@ -282,5 +307,10 @@ them however you see fit.
   .d-4of12 {
       @include grid-col;
       width: 33.3333333%;
+  }
+  
+  .d-8of12 {
+      @include grid-col;
+      width: 66.6666667%;
   }
 } // end desktop styles

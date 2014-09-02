@@ -164,7 +164,7 @@ HEADER STYLES
 
 .header {
 	/*background-color: $bs-gray;*/
-}
+
 
 	#logo, #gif, #advertise {
 		margin: 0.75em 0;
@@ -202,6 +202,7 @@ HEADER STYLES
             margin-left: -1.5em;
             margin-right: -1.5em;
         }
+}
 
 /*********************
 NAVIGATION STYLES
@@ -218,9 +219,9 @@ and more scalable.
 .nav {
 	border-bottom: 0;
 	margin: 0;
-
+        
 	li {
-
+            padding: 3px;
 		a {
 			display: block;
 			color: $white;
@@ -234,13 +235,18 @@ and more scalable.
 			keep this file as small as possible!
 			*/
 			&:hover, &:focus {
-
+                            text-decoration: none;
+                            background-color: $bs-logo-green;
 			}
 		}
 
-		&:first-child {}
+                &:first-child {
+                    text-decoration: none;
+                }
 
-		&:last-child {}
+                &:last-child {
+                    text-decoration: none;
+                }
 
 		/*
 		so you really have to rethink your dropdowns for mobile.
@@ -251,24 +257,55 @@ and more scalable.
 		*/
 		ul.sub-menu,
 		ul.children {
-
+                    background-color: $bs-logo-green;
+                    border-top: transparent solid 10px; 
+                    /*border: none;*/
+                    border-bottom: none;
+                    border-left: none;
+                    border-right: none;
+                    /*border-top: none;*/
+                    border-radius: 5px;
 			li {
 
 				a {
 					padding-left: 30px;
-
+                                        border: none;
+                                        background-color: $bs-logo-green;
+                                        text-decoration: none;
 					&:hover,
-					&:focus {}
+                                            &:focus {
+                                            text-decoration: none;
+                                            
+                                        }
 
-					&:link {}
+                                        &:link {
+                                            border: none;
+                                        }
 
 				}
 
-				&:first-child {}
+                                &:first-child {
+                                    border: none;
+                                }
 
-				&:last-child {}
+                                &:last-child {
+                                    border: none;
+                                }
 
 			}
+                        li.current-menu-item,
+                        li.current_page_item,
+                        li.current_page_ancestor {
+                            background-color: $bs-logo-dark-green;
+                            border: none;
+                            a {
+                                background-color: $bs-logo-dark-green;
+                                border: none;
+                                border-radius: 0;
+                                text-decoration: none;
+                            }
+
+                        }
 
 		}
 
@@ -277,9 +314,14 @@ and more scalable.
 	/* highlight current page */
 	li.current-menu-item,
 	li.current_page_item,
-	li.current_page_ancestor {
-
-		a {}
+	li.current_page_ancestor,
+        li.current-menu-parent{
+            
+            a {
+                background-color: $bs-logo-green;
+                border-radius: 5px;
+                text-decoration: none;
+            }
 
 	}  /* end current highlighters */
 
@@ -296,6 +338,8 @@ POSTS & CONTENT STYLES
         
         #inner-content {
             padding-top: 1.5em;
+            padding-left: 1em;
+            padding-right: 1em;
             background-color: $bs-gray;
         }
 }
@@ -304,7 +348,7 @@ POSTS & CONTENT STYLES
 			background-color: $white;
 			border-radius: 3px;
 			margin-bottom: 1.5em;
-			border: 1px solid $border-color;
+			/*border: 1px solid $border-color;*/
 
 			header {
 				border-bottom: 1px solid $light-gray;
@@ -867,14 +911,29 @@ COMMENT FORM STYLES
 SIDEBARS & ASIDES
 *********************/
 
-.sidebar {}
+.sidebar {
+    
+}
 
-	.widgettitle {}
+.widgettitle {
+    background-color: $bs-logo-dark-green;
+    color: $white;
+    line-height: 2em;
+    margin-top: 0;
+}
+
+.widgettitle:before {
+    content: url('../images/arrRigth.png');
+    margin-right: 1.1em;
+    padding-left: 0.2em;
+    vertical-align: -20%;
+}
 
 	.widget {
+            border: 10px solid $bs-logo-dark-green;
 
 		ul {
-
+                    padding: 5px;
 			li {
 
 				&:first-child {}
