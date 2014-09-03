@@ -64,8 +64,12 @@ NAVIGATION STYLES
 			}
 		}
 
-		&:first-child {}
-		&:last-child {}
+                &:first-child {
+                    margin-left: 1.5em;
+                }
+                &:last-child {
+                    margin-right: 1.5em;
+                }
 
 		/*
 		plan your menus and drop-downs wisely.
@@ -73,7 +77,7 @@ NAVIGATION STYLES
 		ul.sub-menu,
 		ul.children {
 			margin-top: 0;
-			border: 1px solid #ccc;
+			/*border: 1px solid #ccc;*/
 			border-top: 0;
 			position: absolute;
 			visibility: hidden;
@@ -86,7 +90,7 @@ NAVIGATION STYLES
 					border-right: 0;
 					display: block;
 					width: 180px;
-					border-bottom: 1px solid #ccc;
+					/*border-bottom: 1px solid #ccc;*/
 
 					&:hover,
 					&:focus {}
@@ -94,10 +98,12 @@ NAVIGATION STYLES
 					&:link {}
 				}
 
-				&:first-child {}
+                                &:first-child {
+                                    margin-left: 0;
+                                }
 
 				&:last-child {
-
+                                    margin-right: 0;
 					a {
 						border-bottom: 0;
 					}
@@ -251,8 +257,10 @@ SIDEBARS & ASIDES
 	#recentcomments li a {}
 	.widget_recent_comments {}
 
-	/* search widget */
-	#searchform {}
+	/* TODO search widget */
+        #searchform {
+            
+        }
 	.widget_search {}
 	.screen-reader-text {}
 

@@ -1,9 +1,17 @@
 			<footer class="footer" role="contentinfo">
-
 				<div id="inner-footer" class="wrap cf">
+                                    
+                                    <article class="d-1of3 t-1of3 m-all">
+                                        <?php get_sidebar('footer_sidebar_left'); ?>
+                                    </article>
+                                    <article class="d-1of3 t-1of3 m-all">
+                                        <?php get_sidebar('footer_sidebar_center'); ?>
+                                    </article>
+                                    <article class="d-1of3 t-1of3 m-all last-col">
+                                        <?php get_sidebar('footer_sidebar_right'); ?>
+                                    </article>
 
-
-					<p class="source-org copyright">&copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?>.</p>
+                                    <p class="source-org copyright"><?php bloginfo( 'name' ); ?> &copy; 2008 - <?php echo date('Y'); ?></p>
 
 				</div>
 

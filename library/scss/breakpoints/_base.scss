@@ -219,9 +219,34 @@ and more scalable.
 .nav {
 	border-bottom: 0;
 	margin: 0;
-        
+        li.menu-item-has-children:after{
+            font-family: FontAwesome;
+            content: "\f0d7";
+            color: $white;
+            position: absolute;
+            top: 10px;
+            right: 0.8em;
+            transition:All 0.2s ease;
+            -webkit-transition:All 0.2s ease;
+            -moz-transition:All 0.2s ease;
+            -o-transition:All 0.2s ease;
+            transform: rotate(0deg) scale(1);
+            -webkit-transform: rotate(0deg);
+            -moz-transform: rotate(0deg);
+            -o-transform: rotate(0deg);
+            -ms-transform: rotate(0deg);
+        }
+        li.menu-item-has-children:hover{
+            &:after{
+                transform: rotate(-90deg);
+                -webkit-transform: rotate(-90deg);
+                -moz-transform: rotate(-90deg);
+                -o-transform: rotate(-90deg);
+                -ms-transform: rotate(-90deg);
+            }
+        }
 	li {
-            padding: 3px;
+            padding: 3px 0.75em 3px 0.75em;
 		a {
 			display: block;
 			color: $white;
@@ -272,6 +297,8 @@ and more scalable.
                                         border: none;
                                         background-color: $bs-logo-green;
                                         text-decoration: none;
+                                        font-size: 1em;
+                                        line-height: 1em;
 					&:hover,
                                             &:focus {
                                             text-decoration: none;
@@ -293,6 +320,9 @@ and more scalable.
                                 }
 
 			}
+                        li.menu-item-has-children{
+                            
+                        }
                         li.current-menu-item,
                         li.current_page_item,
                         li.current_page_ancestor {
@@ -923,10 +953,12 @@ SIDEBARS & ASIDES
 }
 
 .widgettitle:before {
-    content: url('../images/arrRigth.png');
-    margin-right: 1.1em;
+    content: "\f061";
+    font-family: FontAwesome;
+    margin-right: 0.7em;
     padding-left: 0.2em;
-    vertical-align: -20%;
+    /*vertical-align: -20%;*/
+    color: $white;
 }
 
 	.widget {
@@ -966,8 +998,15 @@ FOOTER STYLES
 
 .footer {
 	clear: both;
-	background-color: $black;
+	background-color: $bs-green;
 	color: $light-gray;
+        
+        .widget{
+            border: none;
+        }
+        .widgettitle{
+            display: none;
+        }
 }
 
 	/*
@@ -990,4 +1029,7 @@ FOOTER STYLES
 	} /* end .footer-links */
 
 
-	.copyright {}
+        .copyright {
+            text-align: center;
+            color: $bs-logo-dark-green;
+        }
