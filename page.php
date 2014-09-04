@@ -23,7 +23,7 @@
                                     <?php printf(__('Posted <time class="updated" datetime="%1$s" pubdate>%2$s</time> by <span class="author">%3$s</span>', 'bonestheme'), get_the_time('Y-m-j'), get_the_time(get_option('date_format')), get_the_author_link(get_the_author_meta('ID'))); ?>
                                 </p>
 
-                            </header> <?php // end article header   ?>
+                            </header> <?php // end article header     ?>
 
                             <section class="entry-content cf" itemprop="articleBody">
                                 <?php
@@ -49,7 +49,7 @@
                                     'link_after' => '</span>',
                                 ));
                                 ?>
-                            </section> <?php // end article section   ?>
+                            </section> <?php // end article section     ?>
 
                             <footer class="article-footer cf">
 
@@ -59,7 +59,8 @@
 
                         </article>
 
-                    <?php endwhile;
+                        <?php
+                    endwhile;
                 else :
                     ?>
 
@@ -75,12 +76,13 @@
                         </footer>
                     </article>
 
-    <?php endif; ?>
+                <?php endif; ?>
 
             </div>
         </div>
-
-<?php get_sidebar(); ?>
+        <?php get_sidebar('adv1_sidebar'); ?>
+        <?php get_sidebar('adv2_sidebar'); ?>
+        <?php get_sidebar(); ?>
 
     </div>
 

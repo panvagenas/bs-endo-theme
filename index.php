@@ -60,7 +60,8 @@
 
 
         </div>
-
+        <?php get_sidebar('adv1_sidebar'); ?>
+        <?php get_sidebar('adv2_sidebar'); ?>
         <?php get_sidebar(); ?>
 
     </div>

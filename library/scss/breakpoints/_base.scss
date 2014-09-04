@@ -371,6 +371,12 @@ POSTS & CONTENT STYLES
             padding-left: 1em;
             padding-right: 1em;
             background-color: $bs-gray;
+            
+            .sidebar {
+                .widget:first-child{
+                    margin-top: 0;
+                }
+            }
         }
 }
 
@@ -606,6 +612,50 @@ POSTS & CONTENT STYLES
 	.tags {
 		margin: 0;
 	}
+
+#searchform {
+    position: relative;
+    padding-left: 2em;
+    padding-top: 0.3em;
+    padding-right: 0.3em;
+    padding-bottom: 0.3em;
+    background-color: $bs-green;
+    
+    .screen-reader-text,
+    #searchsubmit {
+        display: none;
+    }
+    input{
+        border: 1px solid $bs-green;
+        margin-bottom: 0;
+        background-color: $bs-gray;
+        
+        &:focus {
+            background-color: $white;
+        }
+    }
+    
+    div {
+        border: 5px solid $white;
+        border-radius: 5px;
+        padding-left: 2em;
+        background-color: $white;
+    }
+    div:before{
+        background: none repeat scroll 0 0 $white;
+        border: 1px solid $bs-green;
+        border-radius: 50%;
+        color: $bs-green;
+        content: "";
+        font-family: FontAwesome;
+        font-size: 2.5em;
+        left: 0;
+        position: absolute;
+        text-align: center;
+        top: -0.02em;
+        width: 1.5em;
+    }
+}
 
 /******************************************************************
 PAGE NAVI STYLES
@@ -944,12 +994,12 @@ SIDEBARS & ASIDES
 .sidebar {
     
 }
-
 .widgettitle {
     background-color: $bs-logo-dark-green;
     color: $white;
     line-height: 2em;
     margin-top: 0;
+    margin: -0.3em;
 }
 
 .widgettitle:before {
@@ -962,10 +1012,11 @@ SIDEBARS & ASIDES
 }
 
 	.widget {
+            padding: 0.3em;
             border: 10px solid $bs-logo-dark-green;
-
+            
 		ul {
-                    padding: 5px;
+                    /*padding: 5px;*/
 			li {
 
 				&:first-child {}
@@ -991,6 +1042,13 @@ SIDEBARS & ASIDES
 		border-radius: 2px;
 		margin-bottom: 1.5em;
 	}
+        
+.sidebar.no-border{
+    .widget{
+        border: none;
+    }
+    
+}
 
 /*********************
 FOOTER STYLES

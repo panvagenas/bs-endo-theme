@@ -1,4 +1,4 @@
-<div id="" class="m-all t-all d-all cf" role="complementary">
+<div id="" class="no-border sidebar m-all t-all d-all cf" role="complementary">
 
     <?php if (is_active_sidebar('footer_sidebar_center')) : ?>
 

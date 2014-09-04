@@ -73,8 +73,10 @@
 
                     </article>
 
-                <?php endwhile;
-            else : ?>
+                    <?php
+                endwhile;
+            else :
+                ?>
 
                 <article id="post-not-found" class="hentry cf">
                     <header class="article-header">
@@ -88,11 +90,12 @@
                     </footer>
                 </article>
 
-<?php endif; ?>
+            <?php endif; ?>
 
         </div>
-
-<?php get_sidebar(); ?>
+        <?php get_sidebar('adv1_sidebar'); ?>
+        <?php get_sidebar('adv2_sidebar'); ?>
+        <?php get_sidebar(); ?>
 
     </div>
 
