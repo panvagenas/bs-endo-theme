@@ -8,7 +8,7 @@
                 include 'home-head.php';
             }
             ?>
-            <div id="main" class="d-all t-all m-all cf" role="main">
+            <div id="main" class="d-all t-all cf <?php if(is_front_page()) echo 'm-hidden'; else echo 'm-all'; ?>" role="main">
 
 
                 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>

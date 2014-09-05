@@ -166,7 +166,9 @@ HEADER STYLES
 	/*background-color: $bs-gray;*/
 
 
-	#logo, #gif, #advertise {
+	#logo, 
+        #gif, 
+        #advertise {
 		margin: 0.75em 0;
                 
 		a {
@@ -174,8 +176,15 @@ HEADER STYLES
 		}
 	}
         
-        #gif .sidebar-header, #advertise .sidebar-header {
+        #gif .sidebar-header, 
+        #advertise .sidebar-header {
             border-radius: 5px;
+            
+            .widget {
+                padding: 0.75em;
+                margin: 0;
+                border: none;
+            }
         }
         
         #gif .sidebar-header {
@@ -218,7 +227,11 @@ and more scalable.
 
 .nav {
 	border-bottom: 0;
-	margin: 0;
+        margin: 0px auto;
+        width: 96%;
+        width: -moz-calc(100%-3em);
+        width: calc(100%-3em);
+        
         li.menu-item-has-children:after{
             font-family: FontAwesome;
             content: "\f0d7";
@@ -1023,7 +1036,9 @@ SIDEBARS & ASIDES
 
 				&:last-child {}
 
-				a {}
+                                a {
+                                    text-decoration: none;
+                                }
 
 				/* deep nesting */
 				ul {}

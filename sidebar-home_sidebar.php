@@ -1,4 +1,4 @@
-<div id="" class="m-all t-all d-all cf" role="complementary">
+<div id="" class="m-all t-all d-all cf sidebar" role="complementary">
 
     <?php if (is_active_sidebar('home_sidebar')) : ?>
 
