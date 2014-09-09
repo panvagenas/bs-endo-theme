@@ -2,7 +2,7 @@
 
 <div id="content">
     <div id="inner-content" class="wrap cf">
-        <div class="m-all t-2of3 d-5of7 cf">
+        <div class="m-all t-2of3 d-9of12 cf">
             <?php
             if (is_front_page()) {
                 include 'home-head.php';
@@ -80,9 +80,11 @@
 
             </div>
         </div>
-        <?php get_sidebar('adv1_sidebar'); ?>
-        <?php get_sidebar('adv2_sidebar'); ?>
-        <?php get_sidebar(); ?>
+        <div id="sidebar1" class="sidebar m-all t-1of3 d-3of12 last-col cf" role="complementary">
+            <?php get_sidebar('adv1_sidebar'); ?>
+            <?php get_sidebar('adv2_sidebar'); ?>
+            <?php get_sidebar(); ?>
+        </div>
 
     </div>
 

@@ -166,6 +166,15 @@ function bones_register_sidebars() {
 		'before_title' => '<h4 class="widgettitle">',
 		'after_title' => '</h4>',
 	));
+        register_sidebar(array(
+		'id' => 'footer_sidebar_right_1',
+		'name' => __( 'Footer Right Sidebar |_|_|_|*|', 'bonestheme' ),
+		'description' => __( 'The footer right sidebar 2.', 'bonestheme' ),
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget' => '</div>',
+		'before_title' => '<h4 class="widgettitle">',
+		'after_title' => '</h4>',
+	));
         
         register_sidebar(array(
 		'id' => 'header_sidebar_center',

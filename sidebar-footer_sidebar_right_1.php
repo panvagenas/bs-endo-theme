@@ -1,8 +1,8 @@
-<div id="" class="margin-null no-border sidebar m-all t-all d-all last-col cf" role="complementary">
+<div id="" class="no-border sidebar m-all t-all d-all cf last-col" role="complementary">
 
-    <?php if (is_active_sidebar('adv1_sidebar')) : ?>
+    <?php if (is_active_sidebar('footer_sidebar_right_1')) : ?>
 
-        <?php dynamic_sidebar('adv1_sidebar'); ?>
+        <?php dynamic_sidebar('footer_sidebar_right_1'); ?>
 
     <?php else : ?>
 

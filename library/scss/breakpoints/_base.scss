@@ -170,9 +170,12 @@ HEADER STYLES
         #gif, 
         #advertise {
 		margin: 0.75em 0;
-                
+                div{
+                    line-height: 0;
+                }
 		a {
 			color: $white;
+                        line-height: 0;
 		}
 	}
         
@@ -181,7 +184,7 @@ HEADER STYLES
             border-radius: 5px;
             
             .widget {
-                padding: 0.75em;
+                padding: 0;
                 margin: 0;
                 border: none;
             }
@@ -315,7 +318,8 @@ and more scalable.
 					&:hover,
                                             &:focus {
                                             text-decoration: none;
-                                            
+                                            background-color: $bs-logo-dark-green;
+                                            border-radius: 5px;
                                         }
 
                                         &:link {
@@ -1062,7 +1066,12 @@ SIDEBARS & ASIDES
     .widget{
         border: none;
     }
-    
+}
+.sidebar.no-border.margin-null{
+    .widget{
+        margin-top: 0;
+        margin-bottom: 0;
+    }
 }
 
 /*********************

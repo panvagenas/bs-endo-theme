@@ -4,7 +4,7 @@
 
     <div id="inner-content" class="wrap cf">
 
-        <div id="main" class="m-all t-2of3 d-5of7 cf" role="main">
+        <div id="main" class="m-all t-2of3 d-9of12 cf" role="main">
             <h1 class="archive-title"><span><?php _e('Search Results for:', 'bonestheme'); ?></span> <?php echo esc_attr(get_search_query()); ?></h1>
 
             <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
@@ -59,9 +59,11 @@
             <?php endif; ?>
 
         </div>
-        <?php get_sidebar('adv1_sidebar'); ?>
-        <?php get_sidebar('adv2_sidebar'); ?>
-        <?php get_sidebar(); ?>
+        <div id="sidebar1" class="sidebar m-all t-1of3 d-3of12 last-col cf" role="complementary">
+            <?php get_sidebar('adv1_sidebar'); ?>
+            <?php get_sidebar('adv2_sidebar'); ?>
+            <?php get_sidebar(); ?>
+        </div>
 
     </div>
 
