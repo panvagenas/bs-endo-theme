@@ -13,9 +13,9 @@
                                     <article class="d-1of4 t-1of4 m-all last-col">
                                         <?php get_sidebar('footer_sidebar_right_1'); ?>
                                     </article>
-
-                                    <p class="source-org copyright"><?php bloginfo( 'name' ); ?> &copy; 2008 - <?php echo date('Y'); ?></p>
-
+                                    <article class="d-all t-all m-all last-col cf">
+                                        <p class="source-org copyright"><?php bloginfo( 'name' ); ?> &copy; 2008 - <?php echo date('Y'); ?></p>
+                                    </article>
 				</div>
 
 			</footer>

@@ -1,6 +1,6 @@
 
-
-              <article id="post-<?php the_ID(); ?>" <?php post_class('cf'); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
+                <?php get_sidebar('post_top_sidebar'); ?>
+              <article id="post-<?php the_ID(); ?>" <?php post_class('cf d-all t-all m-all'); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
 
                 <header class="article-header">
 
@@ -46,3 +46,4 @@
                 <?php comments_template(); ?>
 
               </article> <?php // end article ?>
+<?php get_sidebar('post_bottom_sidebar'); ?>

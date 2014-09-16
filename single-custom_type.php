@@ -22,10 +22,10 @@
     <div id="inner-content" class="wrap cf">
 
         <div id="main" class="m-all t-2of3 d-9of12 cf" role="main">
-
+            <?php get_sidebar('post_top_sidebar'); ?>
             <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-                    <article id="post-<?php the_ID(); ?>" <?php post_class('cf'); ?> role="article">
+                    <article id="post-<?php the_ID(); ?>" <?php post_class('cf d-all t-all m-all'); ?> role="article">
 
                         <header class="article-header">
 
@@ -88,7 +88,7 @@
                 </article>
 
             <?php endif; ?>
-
+            <?php get_sidebar('post_bottom_sidebar'); ?>
         </div>
         <div id="sidebar1" class="sidebar m-all t-1of3 d-3of12 last-col cf" role="complementary">
             <?php get_sidebar('adv1_sidebar'); ?>

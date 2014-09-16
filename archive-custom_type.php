@@ -19,12 +19,12 @@
     <div id="inner-content" class="wrap cf">
 
         <div id="main" class="m-all t-2of3 d-5of7 cf" role="main">
-
+            <?php get_sidebar('post_top_sidebar'); ?>
+            
             <h1 class="archive-title h2"><?php post_type_archive_title(); ?></h1>
-
             <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-                    <article id="post-<?php the_ID(); ?>" <?php post_class('cf'); ?> role="article">
+                    <article id="post-<?php the_ID(); ?>" <?php post_class('cf d-all t-all m-all'); ?> role="article">
 
                         <header class="article-header">
 
@@ -66,7 +66,7 @@
                 </article>
 
             <?php endif; ?>
-
+            <?php get_sidebar('post_bottom_sidebar'); ?>
         </div>
         <?php get_sidebar('adv1_sidebar'); ?>
         <?php get_sidebar('adv2_sidebar'); ?>

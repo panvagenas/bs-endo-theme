@@ -10,20 +10,25 @@
             ?>
             <div id="main" class="d-all t-all cf <?php if(is_front_page()) echo 'm-hidden'; else echo 'm-all'; ?>" role="main">
 
-
+                <?php
+                if (!is_front_page()) {
+                    get_sidebar('post_top_sidebar');
+                }
+                ?>
                 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-                        <article id="post-<?php the_ID(); ?>" <?php post_class('cf'); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
+                        <article id="post-<?php the_ID(); ?>" <?php post_class('cf d-all t-all m-all'); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
+                            <?php if (!is_front_page()) { ?>
+                                <header class="article-header">
 
-                            <header class="article-header">
+                                    <h1 class="page-title" itemprop="headline"><?php the_title(); ?></h1>
 
-                                <h1 class="page-title" itemprop="headline"><?php the_title(); ?></h1>
+                                    <p class="byline vcard">
+                                        <?php printf(__('Posted <time class="updated" datetime="%1$s" pubdate>%2$s</time> by <span class="author">%3$s</span>', 'bonestheme'), get_the_time('Y-m-j'), get_the_time(get_option('date_format')), get_the_author_link(get_the_author_meta('ID'))); ?>
+                                    </p>
 
-                                <p class="byline vcard">
-                                    <?php printf(__('Posted <time class="updated" datetime="%1$s" pubdate>%2$s</time> by <span class="author">%3$s</span>', 'bonestheme'), get_the_time('Y-m-j'), get_the_time(get_option('date_format')), get_the_author_link(get_the_author_meta('ID'))); ?>
-                                </p>
-
-                            </header> <?php // end article header     ?>
+                                </header> <?php // end article header     ?>
+                            <?php } ?>
 
                             <section class="entry-content cf" itemprop="articleBody">
                                 <?php
@@ -50,12 +55,14 @@
                                 ));
                                 ?>
                             </section> <?php // end article section     ?>
+                            
+                            <?php if (!is_front_page()) { ?>
+                                <footer class="article-footer cf">
 
-                            <footer class="article-footer cf">
+                                </footer>
 
-                            </footer>
-
-                            <?php comments_template(); ?>
+                                <?php comments_template(); ?>
+                            <?php } ?>
 
                         </article>
 
@@ -77,7 +84,11 @@
                     </article>
 
                 <?php endif; ?>
-
+                <?php
+                if (!is_front_page()) {
+                    get_sidebar('post_bottom_sidebar');
+                }
+                ?>
             </div>
         </div>
         <div id="sidebar1" class="sidebar m-all t-1of3 d-3of12 last-col cf" role="complementary">

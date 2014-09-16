@@ -21,7 +21,7 @@
         <div id="main" class="m-all t-2of3 d-5of7 cf" role="main">
 
             <h1 class="archive-title h2"><span><?php _e('Posts Categorized:', 'bonestheme'); ?></span> <?php single_cat_title(); ?></h1>
-
+            <?php get_sidebar('post_top_sidebar'); ?>
             <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
                     <article id="post-<?php the_ID(); ?>" <?php post_class('cf'); ?> role="article">
@@ -65,7 +65,7 @@
                 </article>
 
             <?php endif; ?>
-
+            <?php get_sidebar('post_bottom_sidebar'); ?>
         </div>
         <?php get_sidebar('adv1_sidebar'); ?>
         <?php get_sidebar('adv2_sidebar'); ?>
