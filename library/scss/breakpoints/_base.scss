@@ -166,6 +166,54 @@ HEADER STYLES
 .header {
 	/*background-color: $bs-gray;*/
 
+        /*Scroll icon*/
+        .scroll-to-top-icon{
+            font-family: FontAwesome;
+            font-size: 5em;
+            color: $bs-logo-dark-green;
+            background-color: $white;
+            border-radius: 50%;
+            line-height: 0.5em;
+            position: fixed;
+            right: 1200px;
+            top: 90%;
+            z-index: 99999;
+            display: none;
+            cursor: pointer;
+            
+            &:hover{
+                color: darken($bs-gray, 50%);
+            }
+        }
+        
+        /* Fixed menu */
+        .float-menu{
+            left: 0;
+            margin: 0;
+            padding: 0;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 999999;
+            display:none;
+            
+            ul{
+                margin: auto;
+                width: fit-content;
+                width: -moz-fit-content;
+                
+                li{
+                    padding-top: 0;
+                    padding-bottom: 0;
+                    
+                    a{
+                        padding-top: 10px;
+                        padding-bottom: 10px;
+                    }
+                }
+            }
+        }
+        
 
 	#logo, 
         #gif, 

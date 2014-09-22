@@ -10,17 +10,17 @@
  * There are a lot of example functions and tools in here. If you don't
  * need any of it, just remove it. They are meant to be helpers and are
  * not required. It's your world baby, you can do whatever you want.
-*/
+ */
 
 
 /*
  * Get Viewport Dimensions
  * returns object with viewport dimensions to match css in width and height properties
  * ( source: http://andylangton.co.uk/blog/development/get-viewport-size-width-and-height-javascript )
-*/
+ */
 function updateViewportDimensions() {
-	var w=window,d=document,e=d.documentElement,g=d.getElementsByTagName('body')[0],x=w.innerWidth||e.clientWidth||g.clientWidth,y=w.innerHeight||e.clientHeight||g.clientHeight;
-	return { width:x,height:y }
+    var w = window, d = document, e = d.documentElement, g = d.getElementsByTagName('body')[0], x = w.innerWidth || e.clientWidth || g.clientWidth, y = w.innerHeight || e.clientHeight || g.clientHeight;
+    return {width: x, height: y}
 }
 // setting the viewport width
 var viewport = updateViewportDimensions();
@@ -30,14 +30,18 @@ var viewport = updateViewportDimensions();
  * Throttle Resize-triggered Events
  * Wrap your actions in this function to throttle the frequency of firing them off, for better performance, esp. on mobile.
  * ( source: http://stackoverflow.com/questions/2854407/javascript-jquery-window-resize-how-to-fire-after-the-resize-is-completed )
-*/
+ */
 var waitForFinalEvent = (function () {
-	var timers = {};
-	return function (callback, ms, uniqueId) {
-		if (!uniqueId) { uniqueId = "Don't call this twice without a uniqueId"; }
-		if (timers[uniqueId]) { clearTimeout (timers[uniqueId]); }
-		timers[uniqueId] = setTimeout(callback, ms);
-	};
+    var timers = {};
+    return function (callback, ms, uniqueId) {
+        if (!uniqueId) {
+            uniqueId = "Don't call this twice without a uniqueId";
+        }
+        if (timers[uniqueId]) {
+            clearTimeout(timers[uniqueId]);
+        }
+        timers[uniqueId] = setTimeout(callback, ms);
+    };
 })();
 
 // how long to wait before deciding the resize has stopped, in ms. Around 50-100 should work ok.
@@ -61,57 +65,98 @@ var timeToWaitForLast = 100;
  * We can then use that check to perform actions on the home page only
  *
  * When the window is resized, we perform this function
- * $(window).resize(function () {
- *
- *    // if we're on the home page, we wait the set amount (in function above) then fire the function
- *    if( is_home ) { waitForFinalEvent( function() {
- *
- *      // if we're above or equal to 768 fire this off
- *      if( viewport.width >= 768 ) {
- *        console.log('On home page and window sized to 768 width or more.');
- *      } else {
- *        // otherwise, let's do this instead
- *        console.log('Not on home page, or window sized to less than 768.');
- *      }
- *
- *    }, timeToWaitForLast, "your-function-identifier-string"); }
- * });
- *
+  $(window).resize(function () {
+ 
+     // if we're on the home page, we wait the set amount (in function above) then fire the function
+     if( is_home ) { waitForFinalEvent( function() {
+ 
+       // if we're above or equal to 768 fire this off
+       if( viewport.width >= 768 ) {
+         console.log('On home page and window sized to 768 width or more.');
+       } else {
+         // otherwise, let's do this instead
+         console.log('Not on home page, or window sized to less than 768.');
+       }
+ 
+     }, timeToWaitForLast, "your-function-identifier-string"); }
+  });
+
  * Pretty cool huh? You can create functions like this to conditionally load
  * content and other stuff dependent on the viewport.
  * Remember that mobile devices and javascript aren't the best of friends.
  * Keep it light and always make sure the larger viewports are doing the heavy lifting.
  *
-*/
+ */
 
 /*
  * We're going to swap out the gravatars.
  * In the functions.php file, you can see we're not loading the gravatar
  * images on mobile to save bandwidth. Once we hit an acceptable viewport
  * then we can swap out those images since they are located in a data attribute.
-*/
+ */
 function loadGravatars() {
-  // set the viewport using the function above
-  viewport = updateViewportDimensions();
-  // if the viewport is tablet or larger, we load in the gravatars
-  if (viewport.width >= 768) {
-  jQuery('.comment img[data-gravatar]').each(function(){
-    jQuery(this).attr('src',jQuery(this).attr('data-gravatar'));
-  });
-	}
+    // set the viewport using the function above
+    viewport = updateViewportDimensions();
+    // if the viewport is tablet or larger, we load in the gravatars
+    if (viewport.width >= 768) {
+        jQuery('.comment img[data-gravatar]').each(function () {
+            jQuery(this).attr('src', jQuery(this).attr('data-gravatar'));
+        });
+    }
 } // end function
 
 
 /*
  * Put all your regular jQuery in here.
-*/
-jQuery(document).ready(function($) {
+ */
+jQuery(document).ready(function ($) {
 
-  /*
-   * Let's fire off the gravatar function
-   * You can remove this if you don't need it
-  */
-  loadGravatars();
+    /*
+     * Let's fire off the gravatar function
+     * You can remove this if you don't need it
+     */
+    loadGravatars();
 
+    if (viewport.width >= 768) {
+        var headerHeight = $('.header').height();
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > headerHeight) {
+                $('.scroll-to-top-icon').fadeIn();
+                $('.float-menu').fadeIn();
+            } else {
+                $('.scroll-to-top-icon').fadeOut();
+                $('.float-menu').fadeOut();
+            }
+        });
+
+        $('.scroll-to-top-icon').click(function () {
+            $('html, body').animate({scrollTop: 0, easing: 'easeInOutCubic'}, 800);
+            return false;
+        });
+    } else {
+        $('.scroll-to-top-icon').hide();
+    }
+
+    $(window).resize(function () {
+        waitForFinalEvent(function () {
+            if (viewport.width >= 768) {
+                var icWidth = jQuery('#inner-content').width();
+                var cWidth = jQuery('#content').width();
+                var r = cWidth + Math.floor((icWidth - cWidth) / 2) + 50;
+                var windowWidth = $(window).width();
+                
+                if(r + 100 > windowWidth){
+                    r = windowWidth - 100;
+                }
+
+                $('.scroll-to-top-icon').animate({left: r}, 400);
+
+            } else {
+                $('.scroll-to-top-icon').hide();
+            }
+        }, 500, 'calc-scroll-pos');
+    });
+
+    $(window).trigger('resize');
 
 }); /* end of as page load scripts */
