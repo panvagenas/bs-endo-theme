@@ -13,59 +13,43 @@
             'meta_query' => array(
                 array(
                     'key' => 'slider',
-                    'value' => 'true'
+                    'value' => 'true' // TODO Change this to 1
                 )
             ),
             'posts_per_page' => 5
         );
-        $posts = get_posts($args);
+        $args ['post_status'] = 'publish';
+        $args ['perm'] = 'readable';
+        $args ['post_visibility'] = 'public';
+        $args ['ignore_sticky_posts'] = 1;
+
+        $wq = new WP_Query($args);
+        wp_reset_postdata();
         ?>
-        <!-- Jssor Slider Begin -->
-        <!-- You can move inline styles to css file or css block. -->
-        <div id="slider1_container" class="d-all m-all t-all">
-            <!-- Loading Screen -->
-            <div class="loading" u="loading">
-                <div></div>
-                <div></div>
-            </div>
-            <?php if (!empty($posts)) { ?> 
-                <div class="items-container" u="slides">
+            <?php if ($wq->have_posts()) { ?> 
+                <ul class="pgwSlider">
                     <?php /* @var $post WP_Post */ ?>
-                    <?php foreach ($posts as $post) { ?>
-
-                        <div class="item-container">
-                            <?php echo get_the_post_thumbnail($post->ID, 'large', array('u' => 'image')); ?>"
-                            <div class="thumb-container" u="thumb">
-                                <?php echo get_the_post_thumbnail($post->ID, 'post-thumbnail', array('class' => 'i')); ?>"
-                                <div class="t">Image Gallery</div>
-                                <div class="c">Image gallery with thumbnail navigation</div>
-                            </div>
-                        </div>
-
+                    <?php while ($wq->have_posts()) { $wq->the_post(); ?>
+                    
+                            <li>
+                                <a href="<?php echo get_permalink($wq->post->ID); ?>">
+                                    <?php echo get_the_post_thumbnail(get_the_ID(), 'large'); ?>
+                                    <span><?php echo $wq->post->post_title; ?></span>
+                                </a>
+                            </li>
+                        
                     <?php } ?>
-                </div>
+                </ul>
             <?php } else { ?>
-                <?php // TODO No posts to display ?>
-            <?php } ?>
-            <!-- ThumbnailNavigator Skin Begin -->
-            <div u="thumbnavigator" class="jssort11" style="">
-                <!-- Thumbnail Item Skin Begin -->
-                <div u="slides" style="cursor: move;">
-                    <div u="prototype" class="p" style="">
-                        <thumbnailtemplate></thumbnailtemplate>
-                    </div>
-                </div>
-                <!-- Thumbnail Item Skin End -->
-            </div>
-            <!-- ThumbnailNavigator Skin End -->
-            <a style="display: none" href="http://www.jssor.com">javascript</a>
-        </div>
-        <!-- Jssor Slider End -->
+
+            <?php } 
+        wp_reset_postdata();?>
+
     </article>
-    <article id="home-sidebar" class="d-4of12 t-4of12 m-1of3">
+    <article id="home-sidebar" class="d-4of12 t-4of12 m-hidden">
         <?php get_sidebar('home_sidebar'); ?>
     </article>
-    <article id="home-banners" class="d-8of12 t-8of12 m-2of3">
+    <article id="home-banners" class="d-8of12 t-8of12 m-all">
         <?php get_sidebar('home_banners'); ?>
     </article>
 </section>

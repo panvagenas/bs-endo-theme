@@ -172,6 +172,10 @@ them however you see fit.
       @include grid-col;
       width: 66.6666667%;
   }
+  
+  .t-hidden {
+      display: none;
+  }
 
 } // end tablet
 
@@ -317,5 +321,9 @@ them however you see fit.
   .d-9of12 {
       @include grid-col;
       width: 75%;
+  }
+  
+  .d-hidden {
+      display: none;
   }
 } // end desktop styles

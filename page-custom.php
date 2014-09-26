@@ -109,6 +109,9 @@
             <?php get_sidebar('adv1_sidebar'); ?>
             <?php get_sidebar('adv2_sidebar'); ?>
             <?php get_sidebar(); ?>
+            <article id="home-sidebar" class="d-hidden t-hidden m-all">
+                <?php get_sidebar('home_sidebar'); ?>
+            </article>
         </div>
 
     </div>

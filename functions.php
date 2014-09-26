@@ -206,15 +206,15 @@ function bones_register_sidebars() {
 		'after_title' => '</h4>',
 	));
         
-        register_sidebar(array(
-		'id' => 'home_slider',
-		'name' => __( 'Home Slider Area', 'bonestheme' ),
-		'description' => __( 'Home Slider Area.', 'bonestheme' ),
-		'before_widget' => '<div id="%1$s" class="widget %2$s">',
-		'after_widget' => '</div>',
-		'before_title' => '<h4 class="widgettitle">',
-		'after_title' => '</h4>',
-	));
+//        register_sidebar(array(
+//		'id' => 'home_slider',
+//		'name' => __( 'Home Slider Area', 'bonestheme' ),
+//		'description' => __( 'Home Slider Area.', 'bonestheme' ),
+//		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+//		'after_widget' => '</div>',
+//		'before_title' => '<h4 class="widgettitle">',
+//		'after_title' => '</h4>',
+//	));
         
         register_sidebar(array(
 		'id' => 'adv1_sidebar',

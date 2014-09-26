@@ -1326,184 +1326,222 @@ Mobile Menu Core Style
 /*****************
 Slider
 ******************/
-#slider1_container{
-    position: relative; 
-    top: 0px; 
-    left: 0px; 
-    width: 879px; 
-    height: 300px; 
-    background: #000; 
+/**
+ * PgwSlider - Version 2.3
+ *
+ * Copyright 2014, Jonathan M. Piat
+ * http://pgwjs.com - http://pagawa.com
+ *
+ * Released under the GNU GPLv3 license - http://opensource.org/licenses/gpl-3.0
+ */
+/*.pgwSlider {
+    width: 100%;
+    color: #fff;
+}
+
+.pgwSlider a{
+    display: block;
+    text-decoration: none;
+    color: #fff;
+}
+
+.pgwSlider .ps-current {
+    float: left;
+    width: 74%;
     overflow: hidden;
-
-    .loading{
-        position: absolute; 
-        top: 0px; 
-        left: 0px;
-
-        &:first-child{
-            filter: alpha(opacity=70); 
-            opacity:0.7; 
-            position: absolute; 
-            display: block;
-            background-color: #000000; 
-            top: 0px; 
-            left: 0px;
-            width: 100%;
-            height:100%;
-        }
-
-        &:last-child{
-            position: absolute; 
-            display: block; 
-            background: url(../images/loading.gif) no-repeat center center;
-            top: 0px; 
-            left: 0px;
-            width: 100%;
-            height:100%;
-        }
-    }
-
-    .items-container{
-        cursor: move; 
-        position: absolute; 
-        left: 0px; 
-        top: 0px; 
-        width: 600px; 
-        height: 300px; 
-        overflow: hidden;
-
-        .item-container{
-
-            .thumb-container{
-
-                img{
-
-                }
-
-                .t{
-
-                }
-
-                .c{
-
-                }
-            }
-        }
-    }
-}
-/* jssor slider thumbnail navigator skin 11 css */
-/*
-.jssort11 .p            (normal)
-.jssort11 .p:hover      (normal mouseover)
-.jssort11 .pav          (active)
-.jssort11 .pav:hover    (active mouseover)
-.jssort11 .pdn          (mousedown)
-*/
-
-.jssort11
-{
-    font-family: Arial, Helvetica, sans-serif;
-    position: absolute; width: 200px; height: 300px; left:605px; top:0px;
-
-    .i,
-    .pav:hover .i{
-        position: absolute;
-        top:3px;
-        left:3px;
-        WIDTH: 60px;
-        HEIGHT: 30px;
-        border: white 1px dashed;
-    }
-
-    .pav{
-
-        .i{
-            border: white 1px solid;
-        }
-    }
-
-    .t,
-    .pav:hover .t{
-        position: absolute;
-        top: 3px;
-        left: 68px;
-        width:129px;
-        height: 32px;
-        line-height:32px;
-        text-align: center;
-        color:#fc9835;
-        font-size:13px;
-        font-weight:700;
-    }
-
-    .pav .t,
-    .phv .t,
-    .p:hover .t{
-        color:#fff;
-    }
-
-    .c,
-    .pav:hover .c{
-        position: absolute;
-        top: 38px;
-        left: 3px;
-        width:197px;
-        height: 31px;
-        line-height:31px;
-        color:#fff;
-        font-size:11px;
-        font-weight:400;
-        overflow: hidden;
-    }
-
-    .pav .c,
-    .phv .c,
-    .p:hover .c {
-        color:#fc9835;
-    }
-
-    .t, 
-    .c {
-        transition: color 2s;
-        -moz-transition: color 2s;
-        -webkit-transition: color 2s;
-        -o-transition: color 2s;
-    }
-
-    .p:hover .t,
-        .phv .t,
-        .pav:hover .t,
-        .p:hover .c,
-        .phv .c,
-        .pav:hover .c{
-        transition: none;
-        -moz-transition: none;
-        -webkit-transition: none;
-        -o-transition: none;
-    }
-
-    .p{
-        background:#181818;
-        position: absolute; width: 200px; height: 69px; top: 0; left: 0;
-
-        thumbnailtemplate{
-            width: 100%; height: 100%; border: none;position:absolute; top: 0; left: 0;
-        }
-    }
-
-    .pav,
-    .pdn {
-        background:#462300;
-    }
-
-    .p:hover,
-        .phv,
-        .pav:hover {
-        background:#333;
-    }
+    height: inherit;
+    position: relative;
+    font-size: 1rem;
 }
 
-* html .jssort11 .i {
-    WIDTH /**/: 62px;
-    HEIGHT /**/: 32px;
+.pgwSlider.listOnTheLeft .ps-current {
+    float: right;
+}
+
+.pgwSlider .ps-current ul {
+    width: 100%;
+}
+
+.pgwSlider .ps-current li {
+    width: 100%;
+    z-index: 1;
+    opacity: 0;
+    display: none;
+}
+
+.pgwSlider .ps-current img {
+    max-width: 100%;
+    min-width: 100%;
+    height: auto;
+    display: block;
+    transition: margin-top 250ms linear;
+}
+
+.pgwSlider .ps-caption {
+    position: absolute;
+    width: 100%;
+    padding: 12px;
+    background: rgba(0, 0, 0, 0.7);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000,endColorstr=#99000000);
+    left: 0;
+    bottom: 0;
+    display: none;
+    z-index: 3;
+}
+
+ul.pgwSlider,
+.pgwSlider  ul {
+    float: right;
+    width: 25%;
+    padding: 0;
+    list-style: none;
+    margin: 0;
+}
+
+ul.pgwSlider.listOnTheLeft,
+.pgwSlider.listOnTheLeft > ul {
+    float: left;
+}
+
+ul.pgwSlider > li,
+.pgwSlider > .ps-list > li {
+    height: 50px;
+    margin-bottom: 6px;
+    overflow: hidden;
+    position: relative;
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+    font-size: 0.8rem;
+    transition: opacity 200ms linear;
+}
+
+ul.pgwSlider > li:last-child,
+.pgwSlider > ul > li:last-child {
+    margin-bottom: 0;
+}
+
+ul.pgwSlider > li span,
+.pgwSlider > .ps-list > li span {
+    display: block;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    padding: 5px;
+    background: rgba(0, 0, 0, 0.7);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000,endColorstr=#99000000);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+ul.pgwSlider > li:hover,
+.pgwSlider > ul > li:hover {
+    opacity: 1 !important;
+}
+
+ul.pgwSlider > li img,
+.pgwSlider > ul > li img {
+    width: 100%;
+    min-height: 100%;
+    display: block;
+    transition: margin-top 250ms linear;
+}
+
+.pgwSlider .ps-prevIcon {
+    border-color:transparent #fff transparent;
+    border-style: solid;
+    border-width: 10px 10px 10px 0;
+    display: block;
+}
+
+.pgwSlider .ps-nextIcon {
+    border-color:transparent #fff transparent;
+    border-style: solid;
+    border-width: 10px 0 10px 10px;
+    display: block;
+}
+
+.pgwSlider .ps-current .ps-prev {
+    background: rgba(0, 0, 0, 0.5);
+    filter:  progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#99000000', endColorstr='#99000000');
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#99000000', endColorstr='#99000000')";
+    border: 1px solid #777;
+    border-left: 0;
+    border-radius: 0 4px 4px 0;
+    position: absolute;
+    padding: 20px 20px 20px 17px;
+    left: 0;
+    top: 45%;
+    cursor: pointer;
+}
+
+.pgwSlider .ps-current .ps-next {
+    background: rgba(0, 0, 0, 0.5);
+    filter:  progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#99000000', endColorstr='#99000000');
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#99000000', endColorstr='#99000000')";
+    border: 1px solid #777;
+    border-right: 0;
+    border-radius: 4px 0 0 4px;
+    position: absolute;
+    padding: 20px 17px 20px 20px;
+    right: 0;
+    top: 45%;
+    cursor: pointer;
+}
+
+
+ * The media-queries are not used because IE8 doesn't support them.
+ 
+ul.pgwSlider.wide > li,
+.pgwSlider.wide > ul > li {
+    width: 100% !important;
+}
+
+.pgwSlider.narrow .ps-current {
+    margin-bottom: 6px;
+    font-size: 0.8rem;
+}
+
+.pgwSlider.narrow .ps-current img {
+    width: 100%;
+    min-height: inherit;
+}
+
+.pgwSlider.narrow .ps-current,
+ul.pgwSlider.narrow,
+.pgwSlider.narrow > ul {
+    width: 100%;
+}
+
+ul.pgwSlider.narrow > li,
+.pgwSlider.narrow > .ps-list > li {
+    float: left;
+    min-height: 50px;
+    max-height: 70px;
+    min-width: 15%;
+    font-size: 0.7rem;
+    margin-bottom: 0;
+}
+
+ul.pgwSlider.narrow.listOnTheLeft > li,
+.pgwSlider.narrow.listOnTheLeft > ul > li {
+    float: right;
+}
+
+.pgwSlider.narrow .ps-caption {
+    padding: 8px;
+}
+
+.pgwSlider.narrow .ps-current .ps-prev {
+    padding: 15px 15px 15px 12px;
+    top: 40%;
+}
+
+.pgwSlider.narrow .ps-current .ps-next {
+    padding: 15px 12px 15px 15px;
+    top: 40%;
+}*/
+
+#slider-container .ps-list{
+    display: none;
 }
