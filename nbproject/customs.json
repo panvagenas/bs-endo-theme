@@ -1,0 +1,10 @@
+{
+    "elements": {
+        "thumbnailtemplate": {}
+    },
+    "attributes": {
+        "u": {
+            "context": "div"
+        }
+    }
+}

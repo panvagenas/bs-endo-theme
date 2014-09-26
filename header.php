@@ -66,7 +66,7 @@
                     <?php // bloginfo('description'); ?>
 
 
-                    <nav role="navigation">
+                    <nav role="navigation" class="responsive-this">
                         <?php
                         wp_nav_menu(array(
                             'container' => false, // remove nav container

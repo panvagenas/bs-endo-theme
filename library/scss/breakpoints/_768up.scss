@@ -43,6 +43,8 @@ NAVIGATION STYLES
 
 .nav {
 	border: 0;
+        display: initial;
+
 	ul {
 		
 	}
@@ -143,6 +145,10 @@ NAVIGATION STYLES
 	}  /* end current highlighters */
 
 } /* end .nav */
+
+.slicknav_menu{
+    display: none;
+}
 
 /*********************
 SIDEBARS & ASIDES
