@@ -1,4 +1,4 @@
-<div id="" class="margin-null no-border sidebar m-all t-all d-all last-col cf" role="complementary">
+<div id="" class="margin-null no-border border-img sidebar m-all t-all d-all last-col cf" role="complementary">
 
     <?php if (is_active_sidebar('adv2_sidebar')) : ?>
 

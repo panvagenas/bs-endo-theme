@@ -13,7 +13,7 @@
             'meta_query' => array(
                 array(
                     'key' => 'slider',
-                    'value' => 'true' // TODO Change this to 1
+                    'value' => '1'
                 )
             ),
             'posts_per_page' => 5

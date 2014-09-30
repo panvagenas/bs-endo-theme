@@ -296,12 +296,12 @@
 
                 // Set selection mode
                 if ((pgwSlider.config.selectionMode == 'mouseOver') && (pgwSlider.config.transitionEffect == 'fading')) {
-                    $(this).css('cursor', 'default').click(function(event) {
+                    $(this).css('cursor', 'pointer').click(function(event) {
                         event.preventDefault();
                     }).bind('mouseenter', function(event) {
                         displayElement(element.id);
                     });
-                    $(this).find('a').css('cursor', 'default');
+                    $(this).find('a').css('cursor', 'pointer');
                 } else {
                     $(this).css('cursor', 'pointer').click(function(event) {
                         event.preventDefault();
