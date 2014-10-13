@@ -49,7 +49,13 @@
     <article id="home-sidebar" class="d-4of12 t-4of12 m-hidden">
         <?php get_sidebar('home_sidebar'); ?>
     </article>
-    <article id="home-banners" class="d-8of12 t-8of12 m-all">
-        <?php get_sidebar('home_banners'); ?>
-    </article>
+	<div class="d-8of12 t-8of12 m-all">
+		<article id="home-banners" class="d-all t-all m-all">
+			<?php get_sidebar('home_banners'); ?>
+		</article>
+		<article class="under-home-banners d-all t-all m-hidden">
+			<?php get_sidebar('under_home_banners_left'); ?>
+			<?php get_sidebar('under_home_banners_right'); ?>
+		</article>
+	</div>
 </section>

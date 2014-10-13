@@ -205,16 +205,26 @@ function bones_register_sidebars() {
 		'before_title' => '<h4 class="widgettitle">',
 		'after_title' => '</h4>',
 	));
-        
-//        register_sidebar(array(
-//		'id' => 'home_slider',
-//		'name' => __( 'Home Slider Area', 'bonestheme' ),
-//		'description' => __( 'Home Slider Area.', 'bonestheme' ),
-//		'before_widget' => '<div id="%1$s" class="widget %2$s">',
-//		'after_widget' => '</div>',
-//		'before_title' => '<h4 class="widgettitle">',
-//		'after_title' => '</h4>',
-//	));
+
+	register_sidebar(array(
+		'id' => 'under_home_banners_left',
+		'name' => __( 'Bellow Home Banners Area Left', 'bonestheme' ),
+		'description' => __( 'Bellow Home Banners Area Left', 'bonestheme' ),
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget' => '</div>',
+		'before_title' => '<h4 class="widgettitle">',
+		'after_title' => '</h4>',
+	));
+
+	register_sidebar(array(
+		'id' => 'under_home_banners_right',
+		'name' => __( 'Bellow Home Banners Area Right', 'bonestheme' ),
+		'description' => __( 'Bellow Home Banners Area Right', 'bonestheme' ),
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget' => '</div>',
+		'before_title' => '<h4 class="widgettitle">',
+		'after_title' => '</h4>',
+	));
         
         register_sidebar(array(
 		'id' => 'adv1_sidebar',
