@@ -4,89 +4,93 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-03-02 22:11+0100\n"
 "PO-Revision-Date: \n"
-"Language-Team: fulgor <frag.fulgor@gmail.com>\n"
+"Language-Team: Panagiotis Vagenas <pan.vagenas@gmail.com>\n"
 "Language-Team: fulgor <frag.fulgor@gmail.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: __;_e;_n\n"
 "X-Poedit-Basepath: /home/fulgor/GIT/bones\n"
-"Last-Translator: \n"
+"Last-Translator: Panagiotis Vagenas <pan.vagenas@gmail.com>\n"
+"Language: el_GR\n"
+"X-Generator: Poedit 1.5.4\n"
 "X-Poedit-SearchPath-0: /home/fulgor/GIT/bones\n"
 
 #: comments.php:12
 msgid "This post is password protected. Enter the password to view comments."
 msgstr ""
+"Το άρθρο προστατεύεται. Παρακαλώ εισάγετε το συνθηματικό σας για να δείτε τα "
+"σχόλια."
 
 #: comments.php:23
 msgid "Response"
-msgstr ""
+msgstr "Απάντηση"
 
 #: comments.php:24
 msgid "Responses"
-msgstr ""
+msgstr "Απαντήσεις"
 
 #: comments.php:25
 msgid "One"
-msgstr ""
+msgstr "Ένα"
 
 #: comments.php:26
 msgid "No"
-msgstr ""
+msgstr "Όχι"
 
 #: comments.php:32
 msgid "to"
-msgstr ""
+msgstr "στο"
 
 #: comments.php:59
 msgid "Comments are closed."
-msgstr ""
+msgstr "Δεν επιτρέπονται σχόλια."
 
 #: comments.php:70
 msgid "Leave a Reply"
-msgstr ""
+msgstr "Απαντήστε"
 
 #: comments.php:70
 #, php-format
 msgid "Leave a Reply to %s"
-msgstr ""
+msgstr "Απαντήστε στον %s"
 
 #: comments.php:78
 msgid "You must be"
-msgstr ""
+msgstr "Πρέπει να είστε"
 
 #: comments.php:78
 msgid "logged in"
-msgstr ""
+msgstr "συνδεδεμένος"
 
 #: comments.php:78
 msgid "to post a comment"
-msgstr ""
+msgstr "για να δημοσιεύσετε ένα σχόλιο"
 
 #: comments.php:86
 msgid "Logged in as"
-msgstr ""
+msgstr "Συνδεδεμένος ως"
 
 #: comments.php:86
 msgid "Log out of this account"
-msgstr ""
+msgstr "Αποσύνδεση από αυτόν τον λογαριασμό"
 
 #: comments.php:86
 msgid "Log out"
-msgstr ""
+msgstr "Αποσύνδεση"
 
 #: comments.php:93
 msgid "Name"
-msgstr ""
+msgstr "Όνομα"
 
 #: comments.php:93 comments.php:98
 msgid "(required)"
-msgstr ""
+msgstr "(απαιτείται)"
 
 #: comments.php:94
 msgid "Your Name"
-msgstr ""
+msgstr "Το όνομά σας"
 
 #: comments.php:98
 msgid "Email"
@@ -94,11 +98,11 @@ msgstr ""
 
 #: comments.php:99
 msgid "Your Email"
-msgstr ""
+msgstr "Το Email σας"
 
 #: comments.php:100
 msgid "will not be published"
-msgstr ""
+msgstr "δεν θα δημοσιευτεί"
 
 #: comments.php:104
 msgid "Website"
@@ -106,24 +110,24 @@ msgstr ""
 
 #: comments.php:105
 msgid "Your Website"
-msgstr ""
+msgstr "Ο ιστοότοπός σας"
 
 #: comments.php:112
 msgid "Your Comment Here..."
-msgstr ""
+msgstr "Το σχολιό σας εδώ..."
 
 #: comments.php:115
 msgid "Submit Comment"
-msgstr ""
+msgstr "Υποβολή σχολίου"
 
 #: comments.php:120
 msgid "You can use these tags"
-msgstr ""
+msgstr "Μπορείτε να χρησιμοποιήσετε τις εξής ετικέτες"
 
 #: header.php:23
 #, php-format
 msgid "Page %s"
-msgstr ""
+msgstr "Σελίδα %s"
 
 #: taxonomy-custom_cat.php:22 archive.php:9
 msgid "Posts Categorized:"
@@ -135,19 +139,19 @@ msgstr ""
 
 #: taxonomy-custom_cat.php:32 embed-post_meta.php:1 single-custom_type.php:30
 msgid "by"
-msgstr ""
+msgstr "από"
 
 #: taxonomy-custom_cat.php:32 embed-post_meta.php:1 single-custom_type.php:30
 msgid "filed under"
-msgstr ""
+msgstr "αρχειοθετημένο στις"
 
 #: taxonomy-custom_cat.php:41
 msgid "Read more"
-msgstr ""
+msgstr "Διαβάστε περισότερα"
 
 #: functions.php:103
 msgid "(Edit)"
-msgstr ""
+msgstr "(Επεξεργασία)"
 
 #: functions.php:107
 msgid "Your comment is awaiting moderation."
@@ -155,15 +159,15 @@ msgstr ""
 
 #: functions.php:124
 msgid "Search for:"
-msgstr ""
+msgstr "Αναζήτηση για:"
 
 #: functions.php:125
 msgid "Search the Site..."
-msgstr ""
+msgstr "Αναζήτηση στο Site..."
 
 #: 404.php:11
 msgid "Epic 404 - Article Not Found"
-msgstr ""
+msgstr "Σφάλμα 404 - Το άρθρο δεν βρέθηκε"
 
 #: 404.php:17
 msgid ""
@@ -172,31 +176,31 @@ msgstr ""
 
 #: search.php:7
 msgid "Search Results for:"
-msgstr ""
+msgstr "Αποτελέσματα αναζήτησης για:"
 
 #: search.php:23
 msgid "Read more on"
-msgstr ""
+msgstr "Διαβάστε περισσότερα στο"
 
 #: archive.php:13
 msgid "Posts Tagged:"
-msgstr ""
+msgstr "Άρθρα με ετικέτες:"
 
 #: archive.php:17 author.php:8
 msgid "Posts By:"
-msgstr ""
+msgstr "Άρθρα από τον:"
 
 #: archive.php:21
 msgid "Daily Archives:"
-msgstr ""
+msgstr "Ημερήσιο Αρχείο:"
 
 #: archive.php:25
 msgid "Monthly Archives:"
-msgstr ""
+msgstr "Μηνιαίο Αρχείο:"
 
 #: archive.php:29
 msgid "Yearly Archives:"
-msgstr ""
+msgstr "Ετήσιο Αρχείο:"
 
 #: single-custom_type.php:43
 msgid "Custom Tags"
@@ -204,15 +208,15 @@ msgstr ""
 
 #: embed-tags.php:3
 msgid "Tag"
-msgstr ""
+msgstr "Ετικέτα"
 
 #: embed-tags.php:3
 msgid "Tags"
-msgstr ""
+msgstr "Ετικέτες"
 
 #: image.php:20
 msgid "Read the rest of this entry"
-msgstr ""
+msgstr "Διαβάστε περισσότερα από αυτή την εγγραφή"
 
 #: image.php:38
 msgid "Sorry, no attachments matched your criteria."
@@ -220,11 +224,11 @@ msgstr ""
 
 #: embed-prev_next.php:3
 msgid "&laquo; Older Entries"
-msgstr ""
+msgstr "&laquo; Παλαιότερες Εγγραφές"
 
 #: embed-prev_next.php:4
 msgid "Newer Entries &raquo;"
-msgstr ""
+msgstr "Νεότερες Εγγραφές &raquo;"
 
 #: footer.php:9
 msgid "is powered by"
@@ -232,7 +236,7 @@ msgstr ""
 
 #: embed-not_found.php:3
 msgid "Not Found"
-msgstr ""
+msgstr "Δεν Βρέθηκε"
 
 #: embed-not_found.php:6
 msgid "Sorry, but the requested resource was not found on this site."
@@ -244,7 +248,7 @@ msgstr ""
 
 #: library/bones.php:52
 msgid "Read more &raquo;"
-msgstr ""
+msgstr "Διαβάστε περισότερα &raquo;"
 
 #: library/custom-post-type.php:24
 msgid "Custom Types"
@@ -264,7 +268,7 @@ msgstr ""
 
 #: library/custom-post-type.php:28
 msgid "Edit"
-msgstr ""
+msgstr "Επεξεργασία"
 
 #: library/custom-post-type.php:29
 msgid "Edit Post Types"
