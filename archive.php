@@ -60,14 +60,10 @@
                                 <?php the_post_thumbnail('bones-thumb-300', array('class'=>' alignleft')); ?>
                             </a>
 
-                            <?php the_excerpt(); ?><?php echo '...  <a class="excerpt-read-more" href="'. get_permalink($post->ID) . '" title="'. __( 'Read ', 'bonestheme' ) . get_the_title($post->ID).'">'. __( 'Read more &raquo;', 'bonestheme' ) .'</a>'; ?>
+                            <?php the_excerpt(); ?>
 
 
                         </section>
-
-                        <footer class="article-footer">
-
-                        </footer>
 
                     </article>
 

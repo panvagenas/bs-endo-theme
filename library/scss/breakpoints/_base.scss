@@ -796,15 +796,14 @@ POSTS & CONTENT STYLES
 
 /* image gallery styles */
 .gallery {
-
     dl {
-
+        display: inline-block;
         a {
         }
 
         img {
         }
-
+        text-align: center;
     }
 
     dt {
@@ -1618,7 +1617,7 @@ Mobile Menu Core Style
 /*****************
 Slider
 ******************/
- #slider-container .ps-list {
+  #slider-container .ps-list {
     display: none;
 }
 

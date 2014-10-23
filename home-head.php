@@ -57,5 +57,9 @@
 			<?php get_sidebar('under_home_banners_left'); ?>
 			<?php get_sidebar('under_home_banners_right'); ?>
 		</article>
+		<article class="under-home-banners-under d-all t-all m-hidden">
+			<?php get_sidebar('under_home_banners_left_under'); ?>
+			<?php get_sidebar('under_home_banners_right_under'); ?>
+		</article>
 	</div>
 </section>
