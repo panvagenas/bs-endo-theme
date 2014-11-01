@@ -44,7 +44,8 @@ GENERAL STYLES
 *********************/
 
 body {
-    font-family: $lato;
+    font-family: $sans-serif;
+//    font-weight: normal;
     font-size: 100%;
     line-height: 1.5;
     color: $text-color;
@@ -452,7 +453,7 @@ and more scalable.
                 border-left: none;
                 border-right: none;
                 /*border-top: none;*/
-                border-radius: 5px;
+                border-radius: 0 5px 5px 5px;
                 li {
 
                     a {
@@ -516,6 +517,10 @@ and more scalable.
                 background-color: $bs-logo-green;
                 border-radius: 5px;
                 text-decoration: none;
+
+                &:hover{
+                    border-radius: 5px 5px 0 0;
+                }
             }
 
         }

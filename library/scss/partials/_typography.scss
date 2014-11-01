@@ -39,7 +39,86 @@ FONT FACE (IN YOUR FACE)
       font-style: normal;
   }
 */
+@font-face {
+    font-family: 'Open Sans';
+    src: url(../fonts/Open_Sans/OpenSans-Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: url(../fonts/Open_Sans/OpenSans-Bold.ttf) format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: url(../fonts/Open_Sans/OpenSans-BoldItalic.ttf) format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: url(../fonts/Open_Sans/OpenSans-Italic.ttf) format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+/*@font-face {
+    font-family: 'Open Sans';
+    src: url(../fonts/Open_Sans/OpenSans-ExtraBold.ttf) format('truetype');
+    font-weight: bolder;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: url(../fonts/Open_Sans/OpenSans-ExtraBoldItalic.ttf) format('truetype');
+    font-weight: bolder;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: url(../fonts/Open_Sans/OpenSans-Light.ttf) format('truetype');
+    font-weight: lighter;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: url(../fonts/Open_Sans/OpenSans-LightItalic.ttf) format('truetype');
+    font-weight: lighter;
+    font-style: italic;
+}*/
 
+@font-face {
+    font-family: 'GFS Didot';
+    src: url(../fonts/GFS_Didot/GFSDidot-Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ubuntu Mono';
+    src: url(../fonts/Ubuntu_Mono/UbuntuMono-Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Ubuntu Mono';
+    src: url(../fonts/Ubuntu_Mono/UbuntuMono-Italic.ttf) format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Ubuntu Mono';
+    src: url(../fonts/Ubuntu_Mono/UbuntuMono-Bold.ttf) format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Ubuntu Mono';
+    src: url(../fonts/Ubuntu_Mono/UbuntuMono-BoldItalic.ttf) format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
 
 /*
 The following is based of Typebase:
@@ -47,16 +126,18 @@ https://github.com/devinhunt/typebase.css
 I've edited it a bit, but it's a nice starting point.
 */
 
+//@import url(http://fonts.googleapis.com/css?family=Open+Sans|GFS+Didot|Ubuntu+Mono&subset=latin,greek);
 
 // font stacks
-$sans-serif:        "Helvetica Neue", Helvetica, Arial, sans-serif;
-$serif:             "Georgia", Cambria, Times New Roman, Times, serif;
+$sans-serif:        'Open Sans', sans-serif;
+$serif:             'GFS Didot', serif;
+$mono:              'Ubuntu Mono', monospace, $sans-serif;
 
-/*
- i imported this one in the functions file so bones would look sweet.
- don't forget to remove it for your site.
-*/
-$lato:              'Lato', $sans-serif;
+    /*
+     i imported this one in the functions file so bones would look sweet.
+     don't forget to remove it for your site.
+    */
+$lato:              $sans-serif;
 
 /*
 some nice typographical defaults
@@ -85,4 +166,19 @@ p {
 
 .text-right{
     text-align: right;
+}
+
+span.amp {
+    font-family: $serif !important;
+}
+
+html {
+    font-family: $sans-serif; /* 1 */
+}
+
+code,
+kbd,
+pre,
+samp {
+    font-family: $mono;
 }

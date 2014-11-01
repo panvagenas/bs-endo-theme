@@ -368,8 +368,8 @@ $GLOBALS['comment'] = $comment; ?>
 	and be up and running in seconds.
 	*/
 	function bones_fonts() {
-		wp_register_style( 'googleFonts', 'http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' );
-		wp_enqueue_style( 'googleFonts' );
+//		wp_register_style( 'googleFontsBones', 'http://fonts.googleapis.com/css?family=Open+Sans|GFS+Didot|Ubuntu+Mono&subset=latin,greek' );
+//		wp_enqueue_style( 'googleFontsBones' );
 	}
 
 	add_action( 'wp_print_styles', 'bones_fonts' );
