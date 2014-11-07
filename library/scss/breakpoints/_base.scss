@@ -368,9 +368,6 @@ easily write one group of styles for
 the navs on the site so our css is cleaner
 and more scalable.
 */
-.responsive-this{
-//    display: flex;
-}
 .responsive-this,
 .float-menu {
     margin-top: 15px;
@@ -465,8 +462,8 @@ and more scalable.
                         border: none;
                         background-color: $bs-logo-green;
                         text-decoration: none;
-                        font-size: 1em;
-                        line-height: 1em;
+                        font-size: 0.9em;
+                        line-height: 0.9em;
                         &:hover,
                         &:focus {
                             text-decoration: none;
@@ -490,7 +487,10 @@ and more scalable.
 
                 }
                 li.menu-item-has-children {
-
+                    &:after{
+                        top: 0px;
+                        right: 0.3em;
+                    }
                 }
                 li.current-menu-item,
                 li.current_page_item,
