@@ -58,7 +58,7 @@ function bones_ahoy() {
 	// cleaning up excerpt
 	add_filter( 'excerpt_more', 'bones_excerpt_more' );
 	add_filter( 'get_the_excerpt', 'bones_get_the_excerpt' );
-	add_shortcode('gallery','bones_gallery_shortcode');
+	add_shortcode( 'gallery', 'bones_gallery_shortcode' );
 } /* end bones ahoy */
 
 // let's get this party started
@@ -68,12 +68,13 @@ add_action( 'after_setup_theme', 'bones_ahoy' );
 /************* OEMBED SIZE OPTIONS *************/
 
 if ( ! isset( $content_width ) ) {
-	$content_width = 640;
+	$content_width = 820;
 }
 
 /************* THUMBNAIL SIZE OPTIONS *************/
 
 // Thumbnail sizes
+add_image_size( 'large', 820, 510, true );
 add_image_size( 'bones-thumb-600', 600, 150, true );
 add_image_size( 'bones-thumb-300', 300, 100, true );
 
@@ -101,6 +102,7 @@ add_filter( 'image_size_names_choose', 'bones_custom_image_sizes' );
 
 function bones_custom_image_sizes( $sizes ) {
 	return array_merge( $sizes, array(
+		'large'           => __( '820px by 510px' ),
 		'bones-thumb-600' => __( '600px by 150px' ),
 		'bones-thumb-300' => __( '300px by 100px' ),
 	) );
@@ -351,9 +353,10 @@ $GLOBALS['comment'] = $comment; ?>
 		<section class="comment_content cf">
 			<?php comment_text() ?>
 		</section>
-		<?php comment_reply_link( array_merge( $args, array( 'depth'     => $depth,
-		                                                     'max_depth' => $args['max_depth']
-				) ) ) ?>
+		<?php comment_reply_link( array_merge( $args, array(
+			'depth'     => $depth,
+			'max_depth' => $args['max_depth']
+		) ) ) ?>
 	</article>
 	<?php // </li> is added by WordPress automatically ?>
 	<?php

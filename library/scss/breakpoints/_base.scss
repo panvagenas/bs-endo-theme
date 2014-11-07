@@ -368,6 +368,9 @@ easily write one group of styles for
 the navs on the site so our css is cleaner
 and more scalable.
 */
+.responsive-this{
+//    display: flex;
+}
 .responsive-this,
 .float-menu {
     margin-top: 15px;
@@ -454,6 +457,7 @@ and more scalable.
                 border-right: none;
                 /*border-top: none;*/
                 border-radius: 0 5px 5px 5px;
+//                overflow: hidden;
                 li {
 
                     a {

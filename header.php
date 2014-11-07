@@ -19,6 +19,7 @@
 
         <?php // icons & favicons (for more: http://www.jonathantneal.com/blog/understand-the-favicon/) ?>
         <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+	    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,700italic,400italic|GFS+Didot|Ubuntu+Mono:400,400italic,700,700italic&subset=latin,greek' rel='stylesheet' type='text/css'>
         <link rel="apple-touch-icon" href="<?php echo get_template_directory_uri(); ?>/library/images/apple-icon-touch.png">
         <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/favicon.png">
         <!--[if IE]>
@@ -82,7 +83,7 @@
                         ));
                     ?>    
                     </nav>
-                    <nav role="navigation" class="float-menu">    
+                    <nav role="navigation" class="float-menu d-hidden m-hidden t-hidden">
                     <?php
                         wp_nav_menu(array(
                             'container' => false, // remove nav container

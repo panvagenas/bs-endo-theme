@@ -122,6 +122,8 @@ $('header .responsive-this').slicknav();
         waitForFinalEvent(function () {
             var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
             var showFloatMenu = w >= 1240;
+
+            //$('.sub-menu').height(function(){return window.innerHeight-$(this).offsetTop;}).css('overflow', 'scroll');
             
             if (w >= 768) {
                 var icWidth = jQuery('#inner-content').width();
@@ -143,7 +145,7 @@ $('header .responsive-this').slicknav();
                 $(window).unbind('scroll').scroll(function () {
                     if ($(this).scrollTop() > headerHeight) {
                         $('.scroll-to-top-icon').fadeIn();
-                        showFloatMenu && $('.float-menu').fadeIn();
+                        showFloatMenu && $('.float-menu').fadeIn().css('display', 'flex');
                     } else {
                         $('.scroll-to-top-icon').fadeOut();
                         $('.float-menu').fadeOut();
