@@ -65,21 +65,21 @@ var timeToWaitForLast = 100;
  * We can then use that check to perform actions on the home page only
  *
  * When the window is resized, we perform this function
-  $(window).resize(function () {
- 
-     // if we're on the home page, we wait the set amount (in function above) then fire the function
-     if( is_home ) { waitForFinalEvent( function() {
- 
-       // if we're above or equal to 768 fire this off
-       if( viewport.width >= 768 ) {
-         console.log('On home page and window sized to 768 width or more.');
-       } else {
-         // otherwise, let's do this instead
-         console.log('Not on home page, or window sized to less than 768.');
-       }
- 
-     }, timeToWaitForLast, "your-function-identifier-string"); }
-  });
+ $(window).resize(function () {
+
+ // if we're on the home page, we wait the set amount (in function above) then fire the function
+ if( is_home ) { waitForFinalEvent( function() {
+
+ // if we're above or equal to 768 fire this off
+ if( viewport.width >= 768 ) {
+ console.log('On home page and window sized to 768 width or more.');
+ } else {
+ // otherwise, let's do this instead
+ console.log('Not on home page, or window sized to less than 768.');
+ }
+
+ }, timeToWaitForLast, "your-function-identifier-string"); }
+ });
 
  * Pretty cool huh? You can create functions like this to conditionally load
  * content and other stuff dependent on the viewport.
@@ -110,7 +110,9 @@ function loadGravatars() {
  * Put all your regular jQuery in here.
  */
 jQuery(document).ready(function ($) {
-$('header .responsive-this').slicknav();
+    // Responsive menu
+    $('header .responsive-this').slicknav({allowParentLinks: true});
+
     /*
      * Let's fire off the gravatar function
      * You can remove this if you don't need it
@@ -124,21 +126,21 @@ $('header .responsive-this').slicknav();
             var showFloatMenu = w >= 1240;
 
             //$('.sub-menu').height(function(){return window.innerHeight-$(this).offsetTop;}).css('overflow', 'scroll');
-            
+
             if (w >= 768) {
                 var icWidth = jQuery('#inner-content').width();
                 var cWidth = jQuery('#content').width();
                 var r = cWidth + Math.floor((icWidth - cWidth) / 2) + 50;
                 var windowWidth = $(window).width();
-                
-                if(r + 100 > windowWidth){
+
+                if (r + 100 > windowWidth) {
                     r = windowWidth - 100;
                 }
 
                 $('.scroll-to-top-icon').animate({left: r}, 400);
-                
+
                 /**
-                 * 
+                 *
                  * @type @call;scripts_L112.$@call;height
                  */
                 var headerHeight = $('.header').height();
@@ -157,7 +159,7 @@ $('header .responsive-this').slicknav();
                     return false;
                 });
                 /**
-                 * 
+                 *
                  */
             } else {
                 $('.scroll-to-top-icon').hide();
@@ -167,7 +169,7 @@ $('header .responsive-this').slicknav();
     });
 
     $(window).trigger('resize');
-    
+
     /**
      * slider
      */
@@ -175,11 +177,11 @@ $('header .responsive-this').slicknav();
         selectionMode: 'mouseOver',
         autoSlide: true
     });
-    
-    $('.ps-list li').click(function (){
+
+    $('.ps-list li').click(function () {
         window.location = $(this).children('a').attr('href');
     });
-    
+
     /**
      * Lazy Loading
      */
@@ -188,4 +190,5 @@ $('header .responsive-this').slicknav();
 //    });
 //    $("img").unveil();
 
-}); /* end of as page load scripts */
+});
+/* end of as page load scripts */

@@ -46,9 +46,9 @@
         wp_reset_postdata();?>
 
     </article>
-    <article id="home-sidebar" class="d-4of12 t-4of12 m-hidden">
+    <div id="home-sidebar-for-mob" class="d-4of12 t-4of12 m-hidden">
         <?php get_sidebar('home_sidebar'); ?>
-    </article>
+    </div>
 	<div class="d-8of12 t-8of12 m-all">
 		<article id="home-banners" class="d-all t-all m-all">
 			<?php get_sidebar('home_banners'); ?>
