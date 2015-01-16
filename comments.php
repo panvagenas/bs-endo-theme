@@ -23,7 +23,7 @@ if ( post_password_required() ) {
           'short_ping'        => true,
           'avatar_size'       => 40,
           'callback'          => 'bones_comments',
-          'type'              => 'all',
+          'type'              => 'comment',
           'reply_text'        => 'Reply',
           'page'              => '',
           'per_page'          => '',

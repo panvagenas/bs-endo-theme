@@ -111,7 +111,7 @@ function loadGravatars() {
  */
 jQuery(document).ready(function ($) {
     // Responsive menu
-    $('header .responsive-this').slicknav({allowParentLinks: true});
+    $('header .responsive-this').slicknav();
 
     /*
      * Let's fire off the gravatar function
