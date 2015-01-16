@@ -397,7 +397,8 @@ function bs_endo_add_meta_box() {
 			'bs_endo_sectionid',
 			__( 'Home Page Slider', 'bs_endo_textdomain' ),
 			'bs_endo_meta_box_callback',
-			$screen
+			$screen,
+			'side'
 		);
 	}
 }
