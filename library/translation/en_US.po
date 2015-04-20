@@ -1,0 +1,681 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: wp theme bones\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-10-20 22:17+0200\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Panagiotis Vagenas <pan.vagenas@gmail.com>\n"
+"Language-Team: fulgor <frag.fulgor@gmail.com>\n"
+"Language: el_GR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n\n"
+"X-Poedit-Basepath: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/"
+"wp-content/themes/bs-endo-theme\n"
+"X-Generator: Poedit 1.5.4\n"
+"X-Poedit-SearchPath-0: /home/vagenas/Development/WordPress/vvv/www/BSEndo/"
+"htdocs/wp-content/themes/bs-endo-theme\n"
+
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/single.php:34
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/page.php:76
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/single-custom_type.php:80
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/taxonomy-custom_cat.php:57
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/index.php:49
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/page-custom.php:89
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/archive-custom_type.php:58
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/archive.php:82
+msgid "Oops, Post Not Found!"
+msgstr "Το Άρθρο Δεν Βρέθηκε!"
+
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/single.php:37
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/page.php:79
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/single-custom_type.php:83
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/taxonomy-custom_cat.php:60
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/index.php:52
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/page-custom.php:92
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/archive-custom_type.php:61
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/archive.php:85
+msgid "Uh Oh. Something is missing. Try double checking things."
+msgstr ""
+
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/single.php:40
+msgid "This is the error message in the single.php template."
+msgstr ""
+
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/404.php:13
+msgid "Epic 404 - Article Not Found"
+msgstr "Σφάλμα 404 - Το άρθρο δεν βρέθηκε"
+
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/404.php:19
+msgid ""
+"The article you were looking for was not found, but maybe try looking again!"
+msgstr ""
+
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/404.php:31
+msgid "This is the 404.php template."
+msgstr ""
+
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/page.php:27
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/index.php:17
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/page-custom.php:39
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/search.php:19
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/archive-custom_type.php:33
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/post-formats/format-video.php:10
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/post-formats/format-aside.php:10
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/post-formats/format-image.php:10
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/post-formats/format-link.php:10
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/post-formats/format-gallery.php:10
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/post-formats/format-quote.php:10
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/post-formats/format-audio.php:10
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/post-formats/format-chat.php:10
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/post-formats/format-status.php:10
+#, php-format
+msgid ""
+"Posted <time class=\"updated\" datetime=\"%1$s\" pubdate>%2$s</time> by "
+"<span class=\"author\">%3$s</span>"
+msgstr ""
+"Δημοσιεύτηκε <time class=\"updated\" datetime=\"%1$s\" pubdate>%2$s</time> "
+"από τον <span class=\"author\">%3$s</span>"
+
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/page.php:51
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/single-custom_type.php:57
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/page-custom.php:63
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/post-formats/format-video.php:33
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/post-formats/format-aside.php:33
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/post-formats/format-image.php:33
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/post-formats/format.php:49
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/post-formats/format-link.php:33
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/post-formats/format-gallery.php:33
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/post-formats/format-quote.php:33
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/post-formats/format-audio.php:33
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/post-formats/format-chat.php:33
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/post-formats/format-status.php:33
+msgid "Pages:"
+msgstr "Σελίδες:"
+
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/page.php:82
+msgid "This is the error message in the page.php template."
+msgstr ""
+
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/single-custom_type.php:34
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/taxonomy-custom_cat.php:33
+#, php-format
+msgid ""
+"Posted <time class=\"updated\" datetime=\"%1$s\" pubdate>%2$s</time> by "
+"<span class=\"author\">%3$s</span> <span class=\"amp\">&</span> filed under "
+"%4$s."
+msgstr ""
+"Δημοσιεύτηκε <time class=\"updated\" datetime=\"%1$s\" pubdate>%2$s</time> "
+"από τον <span class=\"author\">%3$s</span> <span class=\"amp\">&</span> κάτω "
+"από τις κατηγορίες %4$s."
+
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/single-custom_type.php:66
+msgid "Custom Tags:"
+msgstr ""
+
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/single-custom_type.php:86
+msgid "This is the error message in the single-custom_type.php template."
+msgstr ""
+
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/sidebar-header_sidebar_center.php:16
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/sidebar-under_home_banners_left.php:16
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/sidebar-home_sidebar.php:16
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/sidebar-footer_sidebar_right.php:16
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/sidebar-adv2_sidebar.php:16
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/sidebar-home_slider.php:16
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/sidebar-footer_sidebar_center.php:16
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/sidebar-home_banners.php:16
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/sidebar-footer_sidebar_right_1.php:16
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/sidebar-footer_sidebar_left.php:16
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/sidebar-under_home_banners_right.php:16
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/sidebar-adv1_sidebar.php:16
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/sidebar-header_sidebar_right.php:16
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/sidebar-sidebar1.php:16
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/sidebar.php:16
+msgid "This is a widget ready area. Add some and they will appear here."
+msgstr ""
+
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/functions.php:103
+msgid "600px by 150px"
+msgstr ""
+
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/functions.php:104
+msgid "300px by 100px"
+msgstr ""
+
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/functions.php:122
+msgid "Main Sidebar"
+msgstr ""
+
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/functions.php:123
+msgid "The first (primary) sidebar."
+msgstr ""
+
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/functions.php:132
+msgid "Home Mainbar"
+msgstr ""
+
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/functions.php:133
+msgid "The home sidebar that displayed in main content area."
+msgstr ""
+
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/functions.php:142
+msgid "Footer Left Sidebar |*|_|_|"
+msgstr ""
+
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/functions.php:143
+msgid "The footer left sidebar."
+msgstr ""
+
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/functions.php:152
+msgid "Footer Center Sidebar |_|*|_|"
+msgstr ""
+
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/functions.php:153
+msgid "The footer center sidebar."
+msgstr ""
+
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/functions.php:162
+msgid "Footer Right Sidebar |_|_|*|"
+msgstr ""
+
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/functions.php:163
+msgid "The footer right sidebar."
+msgstr ""
+
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/functions.php:171
+msgid "Footer Right Sidebar |_|_|_|*|"
+msgstr ""
+
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/functions.php:172
+msgid "The footer right sidebar 2."
+msgstr ""
+
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/functions.php:181
+msgid "Header Center Sidebar"
+msgstr ""
+
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/functions.php:182
+msgid "The header center sidebar."
+msgstr ""
+
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/functions.php:191
+msgid "Header Right Sidebar"
+msgstr ""
+
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/functions.php:192
+msgid "The header right sidebar."
+msgstr ""
+
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/functions.php:201
+msgid "Home Banners Area"
+msgstr ""
+
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/functions.php:202
+msgid "Main banner area."
+msgstr ""
+
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/functions.php:211
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/functions.php:212
+msgid "Bellow Home Banners Area Left"
+msgstr ""
+
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/functions.php:221
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/functions.php:222
+msgid "Bellow Home Banners Area Right"
+msgstr ""
+
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/functions.php:231
+msgid "Adv 1 Sidebar"
+msgstr ""
+
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/functions.php:232
+msgid "Sidebar advertisement position 1."
+msgstr ""
+
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/functions.php:241
+msgid "Adv 2 Sidebar"
+msgstr ""
+
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/functions.php:242
+msgid "Sidebar advertisement position 2."
+msgstr ""
+
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/functions.php:251
+msgid "Post Top Area"
+msgstr ""
+
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/functions.php:252
+msgid "Above posts in single page"
+msgstr ""
+
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/functions.php:261
+msgid "Below Posts Area"
+msgstr ""
+
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/functions.php:262
+msgid "Bellow posts in single page"
+msgstr ""
+
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/functions.php:317
+#, php-format
+msgid "<cite class=\"fn\">%1$s</cite> %2$s"
+msgstr ""
+
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/functions.php:317
+msgid "(Edit)"
+msgstr "(Επεξεργασία)"
+
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/functions.php:318
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/taxonomy-custom_cat.php:33
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/archive-custom_type.php:33
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/archive.php:53
+msgid "F jS, Y"
+msgstr ""
+
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/functions.php:323
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/comments.php:17
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/index.php:28
+msgid "<span>No</span> Comments"
+msgstr "Όχι"
+
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/comments.php:17
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/index.php:28
+msgid "<span>One</span> Comment"
+msgstr "Ένα"
+
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/comments.php:17
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/index.php:28
+msgid "<span>%</span> Comments"
+msgstr ""
+
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/comments.php:38
+msgid "&larr; Previous Comments"
+msgstr ""
+
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/comments.php:39
+msgid "More Comments &rarr;"
+msgstr "Περισσότερα σχόλια &rarr;"
+
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/comments.php:44
+msgid "Comments are closed."
+msgstr "Δεν επιτρέπονται σχόλια."
+
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/header.php:73
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/header.php:90
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/library/bones.php:217
+msgid "The Main Menu"
+msgstr ""
+
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/taxonomy-custom_cat.php:23
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/archive.php:12
+msgid "Posts Categorized:"
+msgstr "Άρθρα της Κατηγορίας:"
+
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/taxonomy-custom_cat.php:39
+msgid "Read More &raquo;"
+msgstr "Διαβάστε Περισσότερα &raquo;"
+
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/taxonomy-custom_cat.php:63
+msgid "This is the error message in the taxonomy-custom_cat.php template."
+msgstr ""
+
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/index.php:32
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/archive.php:53
+msgid "filed under"
+msgstr "αρχειοθετημένο στις"
+
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/index.php:34
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/page-custom.php:74
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/search.php:35
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/post-formats/format-video.php:42
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/post-formats/format-aside.php:42
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/post-formats/format-image.php:42
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/post-formats/format.php:61
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/post-formats/format-link.php:45
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/post-formats/format-gallery.php:42
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/post-formats/format-quote.php:45
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/post-formats/format-audio.php:42
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/post-formats/format-chat.php:42
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/post-formats/format-status.php:42
+msgid "Tags:"
+msgstr "Ετικέτες:"
+
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/index.php:55
+msgid "This is the error message in the index.php template."
+msgstr ""
+
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/page-custom.php:95
+msgid "This is the error message in the page-custom.php template."
+msgstr ""
+
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/search.php:8
+msgid "Search Results for:"
+msgstr "Αποτελέσματα αναζήτησης για:"
+
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/search.php:25
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/archive.php:63
+msgid "Read more &raquo;"
+msgstr "Διαβάστε περισσότερα &raquo;"
+
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/search.php:32
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/post-formats/format.php:59
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/post-formats/format-link.php:43
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/post-formats/format-quote.php:43
+#, php-format
+msgid "Filed under: %1$s"
+msgstr "αρχειοθετημένο στις: %1$s"
+
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/search.php:49
+msgid "Sorry, No Results."
+msgstr "Λυπούμαστε, Δεν βρέθηκε Αποτέλεσμα."
+
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/search.php:52
+msgid "Try your search again."
+msgstr ""
+
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/search.php:55
+msgid "This is the error message in the search.php template."
+msgstr ""
+
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/archive-custom_type.php:64
+msgid "This is the error message in the custom posty type archive template."
+msgstr ""
+
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/archive.php:17
+msgid "Posts Tagged:"
+msgstr "Άρθρα με ετικέτες:"
+
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/archive.php:27
+msgid "Posts By:"
+msgstr "Άρθρα από τον:"
+
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/archive.php:32
+msgid "Daily Archives:"
+msgstr "Ημερήσιο Αρχείο:"
+
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/archive.php:37
+msgid "Monthly Archives:"
+msgstr "Μηνιαίο Αρχείο:"
+
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/archive.php:42
+msgid "Yearly Archives:"
+msgstr "Ετήσιο Αρχείο:"
+
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/archive.php:53
+msgid "Posted"
+msgstr "Δημοσιεύτηκε"
+
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/archive.php:53
+msgid "by"
+msgstr "από"
+
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/archive.php:63
+msgid "Read "
+msgstr "Διαβάστε"
+
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/archive.php:88
+msgid "This is the error message in the archive.php template."
+msgstr ""
+
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/post-formats/format.php:25
+#, php-format
+msgid "Posted <time class=\"updated\" datetime=\"%1$s\" pubdate>%2$s</time>"
+msgstr ""
+"Δημοσιεύτηκε <time class=\"updated\" datetime=\"%1$s\" pubdate>%2$s</time>"
+
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/post-formats/format.php:26
+#, php-format
+msgid " By %1$s"
+msgstr "Από τον %1$s"
+
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/library/custom-post-type.php:31
+msgid "Custom Types"
+msgstr ""
+
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/library/custom-post-type.php:32
+msgid "Custom Post"
+msgstr ""
+
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/library/custom-post-type.php:33
+msgid "All Custom Posts"
+msgstr ""
+
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/library/custom-post-type.php:34
+msgid "Add New"
+msgstr ""
+
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/library/custom-post-type.php:35
+msgid "Add New Custom Type"
+msgstr ""
+
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/library/custom-post-type.php:36
+msgid "Edit"
+msgstr "Επεξεργασία"
+
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/library/custom-post-type.php:37
+msgid "Edit Post Types"
+msgstr ""
+
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/library/custom-post-type.php:38
+msgid "New Post Type"
+msgstr ""
+
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/library/custom-post-type.php:39
+msgid "View Post Type"
+msgstr ""
+
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/library/custom-post-type.php:40
+msgid "Search Post Type"
+msgstr ""
+
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/library/custom-post-type.php:41
+msgid "Nothing found in the Database."
+msgstr ""
+
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/library/custom-post-type.php:42
+msgid "Nothing found in Trash"
+msgstr ""
+
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/library/custom-post-type.php:45
+msgid "This is the example custom post type"
+msgstr ""
+
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/library/custom-post-type.php:82
+msgid "Custom Categories"
+msgstr ""
+
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/library/custom-post-type.php:83
+msgid "Custom Category"
+msgstr ""
+
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/library/custom-post-type.php:84
+msgid "Search Custom Categories"
+msgstr ""
+
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/library/custom-post-type.php:85
+msgid "All Custom Categories"
+msgstr ""
+
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/library/custom-post-type.php:86
+msgid "Parent Custom Category"
+msgstr ""
+
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/library/custom-post-type.php:87
+msgid "Parent Custom Category:"
+msgstr ""
+
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/library/custom-post-type.php:88
+msgid "Edit Custom Category"
+msgstr ""
+
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/library/custom-post-type.php:89
+msgid "Update Custom Category"
+msgstr ""
+
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/library/custom-post-type.php:90
+msgid "Add New Custom Category"
+msgstr ""
+
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/library/custom-post-type.php:91
+msgid "New Custom Category Name"
+msgstr ""
+
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/library/custom-post-type.php:105
+msgid "Custom Tags"
+msgstr ""
+
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/library/custom-post-type.php:106
+msgid "Custom Tag"
+msgstr ""
+
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/library/custom-post-type.php:107
+msgid "Search Custom Tags"
+msgstr ""
+
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/library/custom-post-type.php:108
+msgid "All Custom Tags"
+msgstr ""
+
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/library/custom-post-type.php:109
+msgid "Parent Custom Tag"
+msgstr ""
+
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/library/custom-post-type.php:110
+msgid "Parent Custom Tag:"
+msgstr ""
+
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/library/custom-post-type.php:111
+msgid "Edit Custom Tag"
+msgstr ""
+
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/library/custom-post-type.php:112
+msgid "Update Custom Tag"
+msgstr ""
+
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/library/custom-post-type.php:113
+msgid "Add New Custom Tag"
+msgstr ""
+
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/library/custom-post-type.php:114
+msgid "New Custom Tag Name"
+msgstr ""
+
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/library/admin.php:82
+msgid "j F Y @ g:i a"
+msgstr ""
+
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/library/admin.php:94
+msgid "Recently on Themble (Customize on admin.php)"
+msgstr ""
+
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/library/admin.php:141
+msgid ""
+"<span id=\"footer-thankyou\">Developed by <a href=\"http://yoursite.com\" "
+"target=\"_blank\">Your Site Name</a></span>. Built using <a href=\"http://"
+"themble.com/bones\" target=\"_blank\">Bones</a>."
+msgstr ""
+
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/library/bones.php:82
+#, php-format
+msgid "Page %s"
+msgstr "Σελίδα %s"
+
+#: /home/vagenas/Development/WordPress/vvv/www/BSEndo/htdocs/wp-content/themes/bs-endo-theme/library/bones.php:247
+msgid "No Related Posts Yet!"
+msgstr ""
+
+#~ msgid ""
+#~ "This post is password protected. Enter the password to view comments."
+#~ msgstr ""
+#~ "Το άρθρο προστατεύεται. Παρακαλώ εισάγετε το συνθηματικό σας για να δείτε "
+#~ "τα σχόλια."
+
+#~ msgid "Response"
+#~ msgstr "Απάντηση"
+
+#~ msgid "Responses"
+#~ msgstr "Απαντήσεις"
+
+#~ msgid "One"
+#~ msgstr "Ένα"
+
+#~ msgid "No"
+#~ msgstr "Όχι"
+
+#~ msgid "to"
+#~ msgstr "στο"
+
+#~ msgid "Leave a Reply"
+#~ msgstr "Απαντήστε"
+
+#~ msgid "Leave a Reply to %s"
+#~ msgstr "Απαντήστε στον %s"
+
+#~ msgid "You must be"
+#~ msgstr "Πρέπει να είστε"
+
+#~ msgid "logged in"
+#~ msgstr "συνδεδεμένος"
+
+#~ msgid "to post a comment"
+#~ msgstr "για να δημοσιεύσετε ένα σχόλιο"
+
+#~ msgid "Logged in as"
+#~ msgstr "Συνδεδεμένος ως"
+
+#~ msgid "Log out of this account"
+#~ msgstr "Αποσύνδεση από αυτόν τον λογαριασμό"
+
+#~ msgid "Log out"
+#~ msgstr "Αποσύνδεση"
+
+#~ msgid "Name"
+#~ msgstr "Όνομα"
+
+#~ msgid "(required)"
+#~ msgstr "(απαιτείται)"
+
+#~ msgid "Your Name"
+#~ msgstr "Το όνομά σας"
+
+#~ msgid "Your Email"
+#~ msgstr "Το Email σας"
+
+#~ msgid "will not be published"
+#~ msgstr "δεν θα δημοσιευτεί"
+
+#~ msgid "Your Website"
+#~ msgstr "Ο ιστοότοπός σας"
+
+#~ msgid "Submit Comment"
+#~ msgstr "Υποβολή σχολίου"
+
+#~ msgid "You can use these tags"
+#~ msgstr "Μπορείτε να χρησιμοποιήσετε τις εξής ετικέτες"
+
+#~ msgid "Search for:"
+#~ msgstr "Αναζήτηση για:"
+
+#~ msgid "Search the Site..."
+#~ msgstr "Αναζήτηση στο Site..."
+
+#~ msgid "Read more on"
+#~ msgstr "Διαβάστε περισσότερα στο"
+
+#~ msgid "Tag"
+#~ msgstr "Ετικέτα"
+
+#~ msgid "Read the rest of this entry"
+#~ msgstr "Διαβάστε περισσότερα από αυτή την εγγραφή"
+
+#~ msgid "&laquo; Older Entries"
+#~ msgstr "&laquo; Παλαιότερες Εγγραφές"
+
+#~ msgid "Newer Entries &raquo;"
+#~ msgstr "Νεότερες Εγγραφές &raquo;"

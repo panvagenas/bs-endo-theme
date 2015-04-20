@@ -46,6 +46,9 @@
         wp_reset_postdata();?>
 
     </article>
+	<article id="slider-container" class="d-all t-all m-all">
+		<?php get_sidebar('home_under_slider'); ?>
+	</article>
     <div id="home-sidebar-for-mob" class="d-4of12 t-4of12 m-hidden">
         <?php get_sidebar('home_sidebar'); ?>
     </div>
