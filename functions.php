@@ -486,5 +486,43 @@ function bs_endo_save_meta_box_data( $post_id ) {
 }
 add_action( 'save_post', 'bs_endo_save_meta_box_data' );
 
+
+function homeSlider(){
+    $args = array(
+            'meta_query' => array(
+                array(
+                    'key' => 'slider',
+                    'value' => '1'
+                )
+            ),
+            'posts_per_page' => 5
+        );
+        $args ['post_status'] = 'publish';
+        $args ['perm'] = 'readable';
+        $args ['post_visibility'] = 'public';
+        $args ['ignore_sticky_posts'] = 1;
+
+        $wq = new WP_Query($args);
+        wp_reset_postdata();
+        ob_start();
+            if ($wq->have_posts()) { ?>
+                <ul class="pgwSlider">
+                    <?php /* @var $post WP_Post */ ?>
+                    <?php while ($wq->have_posts()) { $wq->the_post(); ?>
+
+                            <li>
+                                <a href="<?php echo get_permalink($wq->post->ID); ?>">
+                                    <?php echo get_the_post_thumbnail(get_the_ID(), 'large'); ?>
+                                    <span><?php echo $wq->post->post_title; ?></span>
+                                </a>
+                            </li>
+
+                    <?php } ?>
+                </ul>
+            <?php }
+        wp_reset_postdata();
+        echo ob_get_clean();
+}
+add_shortcode( 'bs_home_slider', 'homeSlider' );
 	/* DON'T DELETE THIS CLOSING TAG */
 ?>
