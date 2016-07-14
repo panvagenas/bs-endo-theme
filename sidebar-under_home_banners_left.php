@@ -1,4 +1,4 @@
-<div id="" class="sidebar no-border m-1of2 t-1of2 d-1of2 cf" role="complementary">
+<div id="" class="sidebar no-border d-all cf" role="complementary">
 
     <?php if (is_active_sidebar('under_home_banners_left')) : ?>
 
