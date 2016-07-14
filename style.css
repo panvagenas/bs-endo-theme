@@ -106,3 +106,13 @@ Great work, Theme Check (eye roll)
 .sticky {}          /* DO NOT EDIT THIS */
 .gallery-caption {} /* THESE ARE USELESS */
 .bypostauthor {}    /* THEY ARE ONLY TO KEEP THEME CHECK HAPPY */
+
+.widget_randomizer a img {
+    max-width: 100% !important;
+    height: auto !important;
+}
+
+.widget {
+    border-left-width: 1px;
+    border-right-width: 1px;
+}

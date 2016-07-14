@@ -7,7 +7,7 @@
 ?>
 <section id="main-head" class="d-all t-all m-all cf">
     <article id="slider-container" class="d-all t-all m-all">
-        <?php do_shortcode('[bs_home_slider]'); ?>
+        <?php echo do_shortcode('[recent_post_slider limit="6" design="design-20" show_author="false" show_category_name="false" show_content="true" show_date="true" dots="true" arrows="true" autoplay="true" autoplay_interval="5000" speed="1000" content_words_limit="20"]'); ?>
 
     </article>
 	<article id="slider-container" class="d-all t-all m-all">

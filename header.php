@@ -62,13 +62,13 @@
 
                     <?php // to use a image just replace the bloginfo('name') with your img src and remove the surrounding <p> ?>
                     <div id="inner-header-head" class="wrap cf">
-                        <div id="logo" class="d-4of12 t-4of12 m-2of5">
+                        <div id="logo" class="d-2of12 t-2of12 m-all">
                             <a href="<?php echo home_url(); ?>" rel="nofollow"><img class="logo" alt="bikerspirit.net" src="<?php echo get_template_directory_uri(); ?>/library/images/logo.png"></a>
                         </div>
-                        <div id="gif" class="d-3of12 t-3of12 m-hidden">
+                        <div id="gif" class="d-5of12 t-5of12 m-all">
                             <?php get_sidebar('header_sidebar_center'); ?>
                         </div>
-                        <div id="advertise" class="d-5of12 t-5of12 m-3of5 last-col">
+                        <div id="advertise" class="d-5of12 t-5of12 m-all last-col">
                             <?php get_sidebar('header_sidebar_right'); ?>
                         </div>
                     </div>
