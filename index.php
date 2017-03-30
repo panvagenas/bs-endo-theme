@@ -61,12 +61,13 @@
 
         </div>
         <div id="sidebar1" class="sidebar m-all t-1of3 d-3of12 last-col cf" role="complementary">
-            <?php get_sidebar( 'adv1_sidebar' ); ?>
-            <?php get_sidebar( 'adv2_sidebar' ); ?>
+            <?php get_sidebar('adv1_sidebar'); ?>
+            <?php get_sidebar('adv2_sidebar'); ?>
             <?php get_sidebar(); ?>
-            <article id="home-sidebar" class="d-hidden t-hidden m-all">
-                <?php get_sidebar( 'home_sidebar' ); ?>
-            </article>
+	        <article id="home-sidebar" class="d-hidden t-hidden m-all">
+                <?php get_sidebar('home_sidebar'); ?>
+                <?php get_sidebar('home_banners'); ?>
+           </article>
         </div>
 
     </div>

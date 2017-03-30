@@ -17,7 +17,7 @@
         <?php get_sidebar('home_sidebar'); ?>
     </div>
 	<div class="d-8of12 t-8of12 m-all">
-		<article id="home-banners" class="d-all t-all m-all">
+		<article id="home-banners" class="d-all t-all m-hidden">
 			<?php get_sidebar('home_banners'); ?>
 		</article>
 		<article class="under-home-banners d-all t-all m-hidden">
